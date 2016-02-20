@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/narrow-jumbotron.css">
     <title>Route for Me</title>
 </head>
-<body>
-    <header></header>
+<body ng-controller="mainController">
+<main>
+    <nav class="navbar navbar-default">
+        <img class="img-thumbnail" src="images/logo-small.png" alt="">
+
+        <button type="button" class="btn btn-primary navbar-btn">a thing</button>
+        <button type="button" class="btn btn-primary navbar-btn">another thing</button>
+    </nav>
     <section class="intro">
+        <div class="jumbotron"></div>
         <div>Tired of doing the same route week after week because you can't find new routes to ride?</div>
         <div>Well, check it.</div>
         <div>Fill in the info below and we'll find a trail for you. ezpz</div>
     </section>
     <section class="form">
         <div class="form container">
-            <form class="menu" action="">
-                <div class="fieldHolder">
-                    <label for="zip">Zipcode: </label>
-                    <input type="number" name="zip" placeholder="12345" id="zip">
-                </div>
-                <div class="fieldHolder">
-                    <label for="difficulty">Difficulty: </label>
-                    <select name="difficulty" id="difficulty">
-                        <option value="easy">Easy</option>
-                        <option value="intermed">Intermediate</option>
-                        <option value="hard">Hard</option>
-                    </select>
-                </div>
-                <div class="fieldHolder">
-                    <label for="rideLength">How many miles do you want to ride? </label>
-                    <select name="rideLength" id="rideLength">
-                        <option value="5"><5</option>
-                        <option value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="100">Long</option>
-                    </select>
-                </div>
-                <div class="fieldHolder">
-                    <label for="driveDist">How far out should we look for routes? </label>
-                    <select name="driveDist" id="driveDist">
-                        <option value="10">10</option>
-                        <option value="25">25</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="500">Really far</option>
-                    </select>
-                </div>
 
-                <button class="submit" type="submit">Leggo</button>
-            </form>
         </div>
     </section>
     <footer>some junk</footer>
+</main>
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/mainCtrl.js"></script>
+<script src="js/service.js"></script>
 </body>
 </html>

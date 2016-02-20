@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+
+}
+
+.mainContainer {
+
+}
+
+.intro {
+}
+
+.intro > div {
+}
+
+.menu {
+}
+
+*:focus {
+}
+
+.fieldHolder > * {
+}
