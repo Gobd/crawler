@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 <head>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
     <link rel="stylesheet" href="style/styles.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="style/narrow-jumbotron.css">
+
     <title>Route for Me</title>
 </head>
-<body ng-controller="mainController">
-<main>
-    <nav class="navbar navbar-default">
-        <img class="img-thumbnail" src="images/logo-small.png" alt="">
-
-        <button type="button" class="btn btn-primary navbar-btn">a thing</button>
-        <button type="button" class="btn btn-primary navbar-btn">another thing</button>
-    </nav>
-    <section class="intro">
-        <div class="jumbotron"></div>
-        <div>Tired of doing the same route week after week because you can't find new routes to ride?</div>
-        <div>Well, check it.</div>
-        <div>Fill in the info below and we'll find a trail for you. ezpz</div>
-    </section>
-    <section class="form">
-        <div class="form container">
-
+<body>
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+    <!--<img class="img-thumbnail" src="images/logo-small.png" alt="">-->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="#">Route For Me</a>
         </div>
-    </section>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="about">About</a></li>
+                <li><a ui-sref="form">form</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<main class="container-fluid">
+
+
+    <ui-view>
+
+    </ui-view>
+
     <footer>some junk</footer>
 </main>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
 
 <script src="js/app.js"></script>
-<script src="js/mainCtrl.js"></script>
+<script src="js/homeController.js"></script>
+<script src="js/aboutController.js"></script>
+<script src="js/formController.js"></script>
 <script src="js/service.js"></script>
+
+
 </body>
 </html>
