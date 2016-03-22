@@ -1,21 +1,27 @@
 {
-  "name": "simple-webcrawler-javascript",
-  "version": "0.0.0",
-  "description": "A simple webcrawler written in JavaScript",
-  "main": "crawler.js",
-  "author": "Stephen",
-  "license": "ISC",
+  "name": "routefor.me",
+  "version": "1.0.0",
+  "description": "simple app that suggests a random trail based on your input",
+  "main": "index.js",
   "dependencies": {
-    "cheerio": "^0.19.0",
-    "url-parse": "^1.0.5",
-    "request": "^2.65.0"
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.8"
   },
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomPridham/routefor.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomPridham/routefor.me/issues"
+  },
+  "homepage": "https://github.com/TomPridham/routefor.me#readme"
 }

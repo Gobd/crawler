@@ -6,8 +6,29 @@
     </div>
 </section>
 <section>
-    <form action="" ng-click="submitForm()"ng-model="form">
-        <input type="text">
-        <input type="text">
+    <form class="menu" action="" name="formIn" novalidate>
+        <div class="fieldHolder">
+            <label for="zip">Zipcode: </label>
+            <input name="zip" id="zip" ng-model="zip" type="text" required placeholder="12345" >
+        </div>
+        <div class="fieldHolder">
+            <label for="difficulty">Difficulty: </label>
+            <select name="difficulty" id="difficulty" ng-model="diffOptions.selectedOption" ng-options="option.name for option in diffOptions.availableOptions track by option.id">
+            </select>
+        </div>
+        <div class="fieldHolder">
+            <label for="rideLength">How many miles do you want to ride? </label>
+            <select name="rideLength" id="rideLength" ng-model="lenOptions.selectedOption" ng-options="option.name for option in lenOptions.availableOptions track by option.id">
+            </select>
+        </div>
+        <div class="fieldHolder">
+            <label for="driveDist">How far out should we look for routes? </label>
+            <select name="driveDist" id="driveDist" ng-model="distOptions.selectedOption" ng-options="option.name for option in distOptions.availableOptions track by option.id">
+            </select>
+        </div>
+
+        <button class="submit btn btn-primary-outline" ng-click="submitForm()" type="submit" >Leggo</button>
     </form>
 </section>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
