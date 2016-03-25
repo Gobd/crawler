@@ -12,8 +12,8 @@ var cors = require('cors');
 
 
 //setup internal packages
-var config = require('./config');
-var mainCtrl = require('./private/controllers/mainCtrl');
+var config = require('./../config');
+var mainCtrl = require('./Controllers/mainCtrl');
 
 //create app and specify port
 var app = express();
@@ -39,6 +39,4 @@ mongoose.connection.once("open", function () {
 });
 
 app.post('/trails', mainCtrl.postTrails);
-
-app.post('/', mainCtrl.postData);
 app.get('/', maintCtrl.getTrail);
