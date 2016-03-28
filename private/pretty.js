@@ -72,7 +72,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/01/1112718427.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/01/1112718427.jpg",
                     "rank": null,
                     "rating": 3.67
                 },
@@ -149,7 +149,7 @@ var data = {
                         "\"length\"": "\"2\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Take the paved trail to the south, and after the Frisbee Golf course there is a lot of single track network trails to ride.",
+                    "description": "Take the paved trail to the south, and after the Frisbee Golf course there is a lot of single track network trail to ride.",
                     "length": 2,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -212,7 +212,7 @@ var data = {
             "directions": "Located on U.S. Hwy. 441 within the city limits of Tallulah Falls, Ga.",
             "lat": 34.738562,
             "lon": -83.394118,
-            "description": "One of the most spectacular canyons in the eastern U.S., Tallulah Gorge is two miles long and nearly 1,000 feet deep. Visitors can hike rim trails to several overlooks, or they can obtain a permit to hike to the gorge floor (100 per day, not available during water releases). A suspension bridge sways 80 feet above the rocky bottom, providing spectacular views of the river and waterfalls.  Tightrope walkers have twice crossed the gorge, and visitors can still see towers used by Karl Wallenda.  A paved path follows an on old railroad bed, perfect for strollers and bicycles, while mountain bikers can test their skills on a challenging 10-mile trail.",
+            "description": "One of the most spectacular canyons in the eastern U.S., Tallulah Gorge is two miles long and nearly 1,000 feet deep. Visitors can hike rim trail to several overlooks, or they can obtain a permit to hike to the gorge floor (100 per day, not available during water releases). A suspension bridge sways 80 feet above the rocky bottom, providing spectacular views of the river and waterfalls.  Tightrope walkers have twice crossed the gorge, and visitors can still see towers used by Karl Wallenda.  A paved path follows an on old railroad bed, perfect for strollers and bicycles, while mountain bikers can test their skills on a challenging 10-mile trail.",
             "date_created": null,
             "children": [],
             "activities": [
@@ -248,7 +248,7 @@ var data = {
             "name": "Biltmore Trails",
             "parent_id": null,
             "unique_id": 2495,
-            "directions": "On the biltmore Estate, head to the OUTDOOR center. they have a great map that will outline all the trails, and the main trailhad takes off from behind and on front of the center. ",
+            "directions": "On the biltmore Estate, head to the OUTDOOR center. they have a great map that will outline all the trail, and the main trailhad takes off from behind and on front of the center. ",
             "lat": 35.55533,
             "lon": -82.58463,
             "description": null,
@@ -266,7 +266,7 @@ var data = {
                         "\"length\"": "\"33\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "These trails are only avaiable to people staying/visiting the Biltmore. there is a $5 charge payable at the outdoor center, except for those staying at the Biltmore Inn. The trails vary in difficulty and type from flat gravel/paved roads to some pretty sweet fast singletrack.  The Arbor Trace trail and Black Diamond trail behind the Inn (Westover Trails) are fun and make a nice 90 minute ride. Access the lagoon trail from RiverBend farm and follow it right at the T intersection by the river, then just follow the trail and signs. Trails are well marked. Loop Arbor Trace through the trees, up some nice climbs and come back the way you came once you've done the loop past the farm. Then hit the Green trail as it runs up behind the outdoor center to the left and climb an access road and you'll see a sign leading to the black trail behind the old Chicken coop (reddish-orange clay building). There is also a green trail off to the right and a blue trail access of it, about a mile in.  these are some cool trails; beginner to intermediate in nature. The black trail is label such because of some climbs and tight switchbacks, but pretty tame compared to DuPont, Bent Creek, Tsali. The green is rideable with a hybrid bike. HAVE FUN.",
+                    "description": "These trail are only avaiable to people staying/visiting the Biltmore. there is a $5 charge payable at the outdoor center, except for those staying at the Biltmore Inn. The trail vary in difficulty and type from flat gravel/paved roads to some pretty sweet fast singletrack.  The Arbor Trace trail and Black Diamond trail behind the Inn (Westover Trails) are fun and make a nice 90 minute ride. Access the lagoon trail from RiverBend farm and follow it right at the T intersection by the river, then just follow the trail and signs. Trails are well marked. Loop Arbor Trace through the trees, up some nice climbs and come back the way you came once you've done the loop past the farm. Then hit the Green trail as it runs up behind the outdoor center to the left and climb an access road and you'll see a sign leading to the black trail behind the old Chicken coop (reddish-orange clay building). There is also a green trail off to the right and a blue trail access of it, about a mile in.  these are some cool trail; beginner to intermediate in nature. The black trail is label such because of some climbs and tight switchbacks, but pretty tame compared to DuPont, Bent Creek, Tsali. The green is rideable with a hybrid bike. HAVE FUN.",
                     "length": 33,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -365,7 +365,7 @@ var data = {
             "name": "Allatoona Creek",
             "parent_id": null,
             "unique_id": 1507,
-            "directions": "From Atlanta, head north on I-75 and get off at exit 267B toward Marietta. Make a right on Cobb Parkway/Ga 3 and head north for approximately 9.5 miles. Make a left on Mars Hill Rd. Continue 1.5 miles until you make a right on County Line Rd/Old Stilesboro Rd. After about 0.2 miles, turn right into the parking area off of Old Stilesboro Road. This parking area is the most central to all trails in this system.",
+            "directions": "From Atlanta, head north on I-75 and get off at exit 267B toward Marietta. Make a right on Cobb Parkway/Ga 3 and head north for approximately 9.5 miles. Make a left on Mars Hill Rd. Continue 1.5 miles until you make a right on County Line Rd/Old Stilesboro Rd. After about 0.2 miles, turn right into the parking area off of Old Stilesboro Road. This parking area is the most central to all trail in this system.",
             "lat": 34.01683,
             "lon": -84.72545,
             "description": null,
@@ -383,7 +383,7 @@ var data = {
                         "\"length\"": "\"14\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Updated 1/8/15:<br />The Allatoona Creek Park Mountain Bike Trail System currently includes 18 miles of fun trails.  Riding difficulty levels range between beginner (Rusty Bucket), and advanced (Voodoo, Whipper Snapper).  Plans are underway to add 10 more miles of trail in the next few years.<br /><br />Riding direction changes daily. Please check signs at each trailhead. Trail may close due to wet conditions. Please visit www.imba-westga.org for trail status. <br /><br />Trail is open sunrise to sunset EXCEPT for the following months due to hunting season: <br /><br />September / October - Trail opens at 10:00 am <br />November / December - Trail is closed - HUNTERS ONLY <br />January - Trail opens at 10:00 am",
+                    "description": "Updated 1/8/15:<br />The Allatoona Creek Park Mountain Bike Trail System currently includes 18 miles of fun trail.  Riding difficulty levels range between beginner (Rusty Bucket), and advanced (Voodoo, Whipper Snapper).  Plans are underway to add 10 more miles of trail in the next few years.<br /><br />Riding direction changes daily. Please check signs at each trailhead. Trail may close due to wet conditions. Please visit www.imba-westga.org for trail status. <br /><br />Trail is open sunrise to sunset EXCEPT for the following months due to hunting season: <br /><br />September / October - Trail opens at 10:00 am <br />November / December - Trail is closed - HUNTERS ONLY <br />January - Trail opens at 10:00 am",
                     "length": 14,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -469,7 +469,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/01/1664-1201708882.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/01/1664-1201708882.jpg",
                     "rank": null,
                     "rating": 4
                 }
@@ -539,7 +539,7 @@ var data = {
                         "\"length\"": "\"3\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "They are maintained by local riders on a regular basis and are 100% single track.  These trails are fairly technical with plenty of switch backs, good climbs, bomber decants, and obstacles.  This is hilly terrain and although the area isn\\'t really big the trails make very good use of the terrain.<br />http://www.icorrmtb.org/data/img/Ulrichparktrailmap.jpg",
+                    "description": "They are maintained by local riders on a regular basis and are 100% single track.  These trail are fairly technical with plenty of switch backs, good climbs, bomber decants, and obstacles.  This is hilly terrain and although the area isn\\'t really big the trail make very good use of the terrain.<br />http://www.icorrmtb.org/data/img/Ulrichparktrailmap.jpg",
                     "length": 3,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -656,7 +656,7 @@ var data = {
                         "\"length\"": "\"11\"",
                         "\"nightride\"": "1"
                     },
-                    "description": "Plain and simple: This trail has developed into the best trail in the Metro.  MORC has taken the initiative in working with Dakota County to turn a really marginal doubletrack XC ski loop into the best riding in the Metro. In 2002 we added a new beginner (warm-up) loop directly out of the parking lot. It heads off from the southwest corner of the parking lot and wanders through the pine trees and grass fields of the north end of the park.  Look for a new double expert loop to open up sometime early 2003!  The rest of the trail loop starts at the same place, but heads up the gravel doubletrack. After a good climb and some rolling descents there is new singletrack heading off to the left. This dives into existing trail removing a few hundred yards of wide open field riding. This singletrack is really fun. It's fast, it's smooth, and it's winding. There's a good mix of everything... trees, rocks, roots. Where the old 'new' singletrack used to end and rejoin the XC ski trail, there is brand new singletrack that heads out straight across the doubletrack.  This is one of the best areas of the entire park.  It's wide open rolling singletrack. Once you get an idea of what the corners are like, you can really fly. This is a great intermediate singletrack section that would be fun for people of varied abilities. At the end of this new singletrack section you hop back onto the gravel doubletrack and start immediately into a new bypass climb. This climb last about a quarter of a mile.  This bypass replaced the real steep gravel climbs that are now closed and being re-claimed due to erosion.   The next section you come to is the expert/advanced singletrack.  The trail is still really fun, but not nearly as insane as it used to be. There's still one log crossing in there that's steep enough that it gouges your big chainring despite lifting your wheels as you ride over it. The advanced singletrack section is much tighter than the rest of the singletrack at Lebanon, and has quite a few rock sections. The rocks are a ton of fun, and really well situated. Where the advanced singletrack section ends, you hang a right on some dirt doubletrack and head for the tree line. Just before you go into the trees, there's a new section heading off to the left. This new section replaces some older eroding XC ski trail.  We did a lot of work to seed old trails back into nature last year and hope everyone enjoys the new routes that have been created.  This last section is really a ton of fun as it has some fast winding descents. When you finish this, you're on the home stretch. Head back to the parking lot on double track, and start another lap. ",
+                    "description": "Plain and simple: This trail has developed into the best trail in the Metro.  MORC has taken the initiative in working with Dakota County to turn a really marginal doubletrack XC ski loop into the best riding in the Metro. In 2002 we added a new beginner (warm-up) loop directly out of the parking lot. It heads off from the southwest corner of the parking lot and wanders through the pine trees and grass fields of the north end of the park.  Look for a new double expert loop to open up sometime early 2003!  The rest of the trail loop starts at the same place, but heads up the gravel doubletrack. After a good climb and some rolling descents there is new singletrack heading off to the left. This dives into existing trail removing a few hundred yards of wide open field riding. This singletrack is really fun. It's fast, it's smooth, and it's winding. There's a good mix of everything... trees, rocks, roots. Where the old 'new' singletrack used to end and rejoin the XC ski trail, there is brand new singletrack that heads out straight across the doubletrack.  This is one of the best areas of the entire park.  It's wide open rolling singletrack. Once you get an idea of what the corners are like, you can really fly. This is a great intermediate singletrack section that would be fun for people of varied abilities. At the end of this new singletrack section you hop back onto the gravel doubletrack and start immediately into a new bypass climb. This climb last about a quarter of a mile.  This bypass replaced the real steep gravel climbs that are now closed and being re-claimed due to erosion.   The next section you come to is the expert/advanced singletrack.  The trail is still really fun, but not nearly as insane as it used to be. There's still one log crossing in there that's steep enough that it gouges your big chainring despite lifting your wheels as you ride over it. The advanced singletrack section is much tighter than the rest of the singletrack at Lebanon, and has quite a few rock sections. The rocks are a ton of fun, and really well situated. Where the advanced singletrack section ends, you hang a right on some dirt doubletrack and head for the tree line. Just before you go into the trees, there's a new section heading off to the left. This new section replaces some older eroding XC ski trail.  We did a lot of work to seed old trail back into nature last year and hope everyone enjoys the new routes that have been created.  This last section is really a ton of fun as it has some fast winding descents. When you finish this, you're on the home stretch. Head back to the parking lot on double track, and start another lap. ",
                     "length": 11,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -695,7 +695,7 @@ var data = {
                         "\"length\"": "\"18\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "This loop is actually several trails which all connect to each other and form the loop. Start out riding up Keystone Gulch. You will climb gradually on this fairly well maintained dirt road for about 4.5 miles. Just after the road veers left, after the third chairlift, look for a road taking off to the right near a large maintenance building. There is a sign here but the day I rode this it was wrapped in plastic and leaning against a tree. At about 5 miles and crossing two ski runs, take the road to the right. Look for a round sign with a blue arrow. There are also bright red signs with bicycle symbol on them marking the trail. Many of these signs however are in disrepair so don't rely on them, but if you do see one you will know you are on the right trail. At this point the trail goes down through a meadow and accross a very small stream. After you cross the stream begin the climb up the westridge to the Colorado Trail. After about three miles the trail intersects the Colorado Trail. At this point you should see the markers (a triangle symbol) identifying the Colorado Trail. Take the sharp right here. Meander across the westridge for a few miles and stay left at the next fork (appx. 8 mi.) If you go right here you will go back down to Keystone gulch. From here the Colorado Trail begins it's long and fast descent toward Breckenridge. After a couple miles descending, the Colorado Trail will make a VERY sharp turn to the left and Red's trail will be the straight option. I believe there is a post at this intersection. Go straight onto Red's Trail and follow the narrow singletrack along a steep hillside and eventually back into the forest. After a few more miles this trail will terminate with a choice of dirt road to the left or more singletrack to the right. Take the single track to the right which is Keystone Ranch Trail. Follow this trail for a few miles. The golf course will be on your left. Cross a few roads and this trail will turn into the Aqueduct trail. Follow the aquaduct trail around the mountain and back to Keystone gulch. Once you come out on the road turn left back to your car.",
+                    "description": "This loop is actually several trail which all connect to each other and form the loop. Start out riding up Keystone Gulch. You will climb gradually on this fairly well maintained dirt road for about 4.5 miles. Just after the road veers left, after the third chairlift, look for a road taking off to the right near a large maintenance building. There is a sign here but the day I rode this it was wrapped in plastic and leaning against a tree. At about 5 miles and crossing two ski runs, take the road to the right. Look for a round sign with a blue arrow. There are also bright red signs with bicycle symbol on them marking the trail. Many of these signs however are in disrepair so don't rely on them, but if you do see one you will know you are on the right trail. At this point the trail goes down through a meadow and accross a very small stream. After you cross the stream begin the climb up the westridge to the Colorado Trail. After about three miles the trail intersects the Colorado Trail. At this point you should see the markers (a triangle symbol) identifying the Colorado Trail. Take the sharp right here. Meander across the westridge for a few miles and stay left at the next fork (appx. 8 mi.) If you go right here you will go back down to Keystone gulch. From here the Colorado Trail begins it's long and fast descent toward Breckenridge. After a couple miles descending, the Colorado Trail will make a VERY sharp turn to the left and Red's trail will be the straight option. I believe there is a post at this intersection. Go straight onto Red's Trail and follow the narrow singletrack along a steep hillside and eventually back into the forest. After a few more miles this trail will terminate with a choice of dirt road to the left or more singletrack to the right. Take the single track to the right which is Keystone Ranch Trail. Follow this trail for a few miles. The golf course will be on your left. Cross a few roads and this trail will turn into the Aqueduct trail. Follow the aquaduct trail around the mountain and back to Keystone gulch. Once you come out on the road turn left back to your car.",
                     "length": 18,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -703,7 +703,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/02/2697-1217216939.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/02/2697-1217216939.jpg",
                     "rank": null,
                     "rating": 3.14
                 }
@@ -773,7 +773,7 @@ var data = {
                         "\"length\"": "\"7\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "A simple trail, perfect for beginners located in the outskirts of Frisco, TX. Although it is an excellent beginner trail, it still has a fair number of challenges, obstacles, and separate routes geared more towards experienced riders. The trail consists of three loops: an outer loop called the Ranger Loop, marked by blue, which is best for beginners, an inner loop called Wolverine, marked by orange, good for intermediate riders, and another inner loop called Redhawk, marked by red, and best for advanced riders. The total mileage of all the trails combined is 5 miles with about 400 feet of climbing. The trail is built on the side of a prarie hill and is mostly grassy with some good open field scenery. There are very few trees and very few roots which makes for an excellent, fast cross country course. Be sure to bring plenty of water on sunny days due to the lack of shade!&lt;br /&gt;<br />&lt;br /&gt;<br />Visit www.dorba.org for more information.",
+                    "description": "A simple trail, perfect for beginners located in the outskirts of Frisco, TX. Although it is an excellent beginner trail, it still has a fair number of challenges, obstacles, and separate routes geared more towards experienced riders. The trail consists of three loops: an outer loop called the Ranger Loop, marked by blue, which is best for beginners, an inner loop called Wolverine, marked by orange, good for intermediate riders, and another inner loop called Redhawk, marked by red, and best for advanced riders. The total mileage of all the trail combined is 5 miles with about 400 feet of climbing. The trail is built on the side of a prarie hill and is mostly grassy with some good open field scenery. There are very few trees and very few roots which makes for an excellent, fast cross country course. Be sure to bring plenty of water on sunny days due to the lack of shade!&lt;br /&gt;<br />&lt;br /&gt;<br />Visit www.dorba.org for more information.",
                     "length": 7,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1108,7 +1108,7 @@ var data = {
                         "\"length\"": "\"20\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "This network of trails has a little of everything except big hills. There are a few short and steep climbs and desents but it is mostly flat(ish). There are tight twisty trails with lots of roots, logs, and rocks. There are also some nice easy trails for our friends that are just getting started on Mt. bukes.<br />",
+                    "description": "This network of trail has a little of everything except big hills. There are a few short and steep climbs and desents but it is mostly flat(ish). There are tight twisty trail with lots of roots, logs, and rocks. There are also some nice easy trail for our friends that are just getting started on Mt. bukes.<br />",
                     "length": 20,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1225,7 +1225,7 @@ var data = {
                         "\"length\"": "\"10\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "spring farm is a fun hilly intermediate to advanced area, it starts with an uphill rocky climb (crag trail) which leads to a fun downhill curvy hiking trail (cedar drive). from there it goes to my favorite the ski loop which an awesome single track. the map will show more like farm road blue, north east trail blue which are all awesome trails!   ",
+                    "description": "spring farm is a fun hilly intermediate to advanced area, it starts with an uphill rocky climb (crag trail) which leads to a fun downhill curvy hiking trail (cedar drive). from there it goes to my favorite the ski loop which an awesome single track. the map will show more like farm road blue, north east trail blue which are all awesome trail!   ",
                     "length": 10,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1420,7 +1420,7 @@ var data = {
                         "\"length\"": "\"10\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Knob Hill is an easy ride.  Other than a short technical area at the West end of the trail, it is an easy ride and inexperienced riders will do well here.  The 10+ mile trip out and back takes about an 45 mins.  DORBA (Dallas Off Road Bicycle Association) seems to do a good job of maintaining the trial, and there are a few short-cuts that have been closed to help maintain the trail. â Remember to stay on open trails to keep the trails open â Trail maps are available at local bike shops. This is an Army Corps of Engineers area used as a floodplain for heavy rainfall runoff.  If there is rain in the area or if it has rained in the past day or so, the trail may be closed. <br />",
+                    "description": "Knob Hill is an easy ride.  Other than a short technical area at the West end of the trail, it is an easy ride and inexperienced riders will do well here.  The 10+ mile trip out and back takes about an 45 mins.  DORBA (Dallas Off Road Bicycle Association) seems to do a good job of maintaining the trial, and there are a few short-cuts that have been closed to help maintain the trail. â Remember to stay on open trail to keep the trail open â Trail maps are available at local bike shops. This is an Army Corps of Engineers area used as a floodplain for heavy rainfall runoff.  If there is rain in the area or if it has rained in the past day or so, the trail may be closed. <br />",
                     "length": 10,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1428,7 +1428,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/02/2189-1185978186.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/02/2189-1185978186.jpg",
                     "rank": null,
                     "rating": 4.29
                 }
@@ -1459,7 +1459,7 @@ var data = {
                         "\"length\"": "\"0\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "This trail connects the Malabar Scrub Sanctuary West trails and the Malabar Scrub Sanctuary East trail.",
+                    "description": "This trail connects the Malabar Scrub Sanctuary West trail and the Malabar Scrub Sanctuary East trail.",
                     "length": 0,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1498,7 +1498,7 @@ var data = {
                         "\"length\"": "\"140\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Trail 56 and the trails around it are the best, but there is 140 miles worth of exploring to do. the North Brookfield section is good too.",
+                    "description": "Trail 56 and the trail around it are the best, but there is 140 miles worth of exploring to do. the North Brookfield section is good too.",
                     "length": 140,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1506,7 +1506,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/09/906-1217620216.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/09/906-1217620216.jpg",
                     "rank": null,
                     "rating": 5
                 }
@@ -1519,7 +1519,7 @@ var data = {
             "name": "Farmdale Reservoir Recreation Area",
             "parent_id": null,
             "unique_id": 1750,
-            "directions": "To park: Take East Washington St. through East Peoria, turn Right at the CVS pharmacy and McDonald's. Follow signs to park.  Park in large lot by the information kiosk.&lt;br /&gt;Trails: Go either way out of the parking lot and follow the trails.  There is an entire system.  Best to go to www.pambamtb.org and download a map of the park.",
+            "directions": "To park: Take East Washington St. through East Peoria, turn Right at the CVS pharmacy and McDonald's. Follow signs to park.  Park in large lot by the information kiosk.&lt;br /&gt;Trails: Go either way out of the parking lot and follow the trail.  There is an entire system.  Best to go to www.pambamtb.org and download a map of the park.",
             "lat": 40.67589,
             "lon": -89.50161,
             "description": null,
@@ -1537,7 +1537,7 @@ var data = {
                         "\"length\"": "\"18\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "There's everything from open fire roads to tight technical singletrack to man made obstacles and stunts.  This place rocks.  Other trails in this area that are must rides are Independence Park in Marquette Heights and Dirksen Park in Pekin.  Jubilee State Park is also worth a visit.",
+                    "description": "There's everything from open fire roads to tight technical singletrack to man made obstacles and stunts.  This place rocks.  Other trail in this area that are must rides are Independence Park in Marquette Heights and Dirksen Park in Pekin.  Jubilee State Park is also worth a visit.",
                     "length": 18,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1545,7 +1545,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/01/1137808298.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/01/1137808298.jpg",
                     "rank": null,
                     "rating": 4.56
                 }
@@ -1576,7 +1576,7 @@ var data = {
                         "\"length\"": "\"13\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "This is a technically and physically demanding trail which can be done as a loop or an out and back. Those willing to take great risk can try their skills on the famous Portal Trail singletrack descent  to finish the loop.  Warning! The Portal Trail has some &quot;really extreme&quot; exposure and people have paid the ultimate price negotiating certain sections of this trail.Portal Trail is a very narrow singletrack that skirts the face of a near vertical cliff. Many people walk this part of the trail. Poison Spider Mesa is a challenging ride due to the attention required to negotiate loose terrain, babyheads, bedrock ledges, slickrock (lots of slickrock) and at times deep sand all on one of Moab's  classic  Jeep 4x4 trails. Once on the mesa ,there is much slickrock to play around on. The ride starts with a tough climb on bedrock and the occasional alluvial terrace or deep sand and then on to a flatter ledgy surface.  The trail turns curvy a bit then some confusion  awaits for finding the route to the slickrock. Once on the hallowed surface you can freeform ride to the mesa or follow the trail markers which are little painted Jeeps. If you choose to make your own way to the mesa, study the trail map first and keep a look out for certain landmarks to help you navagate to the rim. At any point along the trail you can turn around to make it an out and back ride.The mileage count  is assuming you follow the painted markers to the top, however, mileage becomes a moot point if you decide to freeform ride once on the slickrock.",
+                    "description": "This is a technically and physically demanding trail which can be done as a loop or an out and back. Those willing to take great risk can try their skills on the famous Portal Trail singletrack descent  to finish the loop.  Warning! The Portal Trail has some &quot;really extreme&quot; exposure and people have paid the ultimate price negotiating certain sections of this trail.Portal Trail is a very narrow singletrack that skirts the face of a near vertical cliff. Many people walk this part of the trail. Poison Spider Mesa is a challenging ride due to the attention required to negotiate loose terrain, babyheads, bedrock ledges, slickrock (lots of slickrock) and at times deep sand all on one of Moab's  classic  Jeep 4x4 trail. Once on the mesa ,there is much slickrock to play around on. The ride starts with a tough climb on bedrock and the occasional alluvial terrace or deep sand and then on to a flatter ledgy surface.  The trail turns curvy a bit then some confusion  awaits for finding the route to the slickrock. Once on the hallowed surface you can freeform ride to the mesa or follow the trail markers which are little painted Jeeps. If you choose to make your own way to the mesa, study the trail map first and keep a look out for certain landmarks to help you navagate to the rim. At any point along the trail you can turn around to make it an out and back ride.The mileage count  is assuming you follow the painted markers to the top, however, mileage becomes a moot point if you decide to freeform ride once on the slickrock.",
                     "length": 13,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1615,7 +1615,7 @@ var data = {
                         "\"length\"": "\"15\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Just West of Beartree Gap Campground, off of a old fire road can be found one of the best kept secrets of mtn. biking in Southwest Virginia. With miles of awsome rolling singletrack, high speed open doubletrack, agonizing climbs,technical rock gardens, and white-knuckle gravel decents, this network of old logging and mining roads and foot trails has something for everyone. Many trails can be accessed from FR(fire road) 90 and can be combined to form various loops, lolliepops, or out &amp; backs for quick after work rides or epic 8 hour days. The trails are never crowded and are well marked. Trail maps can be obtained from local bike shops, and you might meet a local rider who can give you some helpful info.",
+                    "description": "Just West of Beartree Gap Campground, off of a old fire road can be found one of the best kept secrets of mtn. biking in Southwest Virginia. With miles of awsome rolling singletrack, high speed open doubletrack, agonizing climbs,technical rock gardens, and white-knuckle gravel decents, this network of old logging and mining roads and foot trail has something for everyone. Many trail can be accessed from FR(fire road) 90 and can be combined to form various loops, lolliepops, or out &amp; backs for quick after work rides or epic 8 hour days. The trail are never crowded and are well marked. Trail maps can be obtained from local bike shops, and you might meet a local rider who can give you some helpful info.",
                     "length": 15,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1623,7 +1623,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/01/1142747627.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/01/1142747627.jpg",
                     "rank": null,
                     "rating": 3.33
                 }
@@ -1714,7 +1714,7 @@ var data = {
             "name": "American River Confluence Trails",
             "parent_id": null,
             "unique_id": 314,
-            "directions": "The Confluence is out of Auburn towards the city of Cool, the trails are pretty much below the Forest Hill bridge, there area bunch of fun one's. Go Kings!(sacto)",
+            "directions": "The Confluence is out of Auburn towards the city of Cool, the trail are pretty much below the Forest Hill bridge, there area bunch of fun one's. Go Kings!(sacto)",
             "lat": 38.91661,
             "lon": -121.0359,
             "description": null,
@@ -1753,7 +1753,7 @@ var data = {
             "name": "Naylor Mill Park",
             "parent_id": null,
             "unique_id": 2007,
-            "directions": "Take Rt. 13 North; pass the mall; make left onto Naylor Mill Rd; follow until Parker Athletic Complex; make right; trails on left of parking lot.",
+            "directions": "Take Rt. 13 North; pass the mall; make left onto Naylor Mill Rd; follow until Parker Athletic Complex; make right; trail on left of parking lot.",
             "lat": 38.41281,
             "lon": -75.59037,
             "description": null,
@@ -1771,7 +1771,7 @@ var data = {
                         "\"length\"": "\"7\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "AT least 7 miles (but always growing) of twisting, winding singletrack. Relatively flat but the trails are made as technical as possible by the locals. The system ultilizes one ridge for as much climbing/descending and off-camber as is possible. They keep adding more and more fun trail systems. Really fun place to ride. Hands down best place to ride on the eastern shore of Maryland. Great for beginners (every technical section has a beginner option so beginners don't have to walk the course.) For more information about these trails please contact SU Cycling Club or either of the local shops, BikeSport or Salisbury Cycles.",
+                    "description": "AT least 7 miles (but always growing) of twisting, winding singletrack. Relatively flat but the trail are made as technical as possible by the locals. The system ultilizes one ridge for as much climbing/descending and off-camber as is possible. They keep adding more and more fun trail systems. Really fun place to ride. Hands down best place to ride on the eastern shore of Maryland. Great for beginners (every technical section has a beginner option so beginners don't have to walk the course.) For more information about these trail please contact SU Cycling Club or either of the local shops, BikeSport or Salisbury Cycles.",
                     "length": 7,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1792,7 +1792,7 @@ var data = {
             "name": "Whites Reservior",
             "parent_id": null,
             "unique_id": 1984,
-            "directions": "Head out of NoHo west on route 66. continue to westhampton and go past overlook farm stand.  continue till you see lyman rd on your left. Go down lyman till you get to the dam on your right. Park here. the trails are not marked and are off of the quad trails. Just go down the quad trails and look sharp.",
+            "directions": "Head out of NoHo west on route 66. continue to westhampton and go past overlook farm stand.  continue till you see lyman rd on your left. Go down lyman till you get to the dam on your right. Park here. the trail are not marked and are off of the quad trail. Just go down the quad trail and look sharp.",
             "lat": 42.25438,
             "lon": -72.78663,
             "description": null,
@@ -1810,7 +1810,7 @@ var data = {
                         "\"length\"": "\"16\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "In amongst the quad trails there are several miles of very good single track. Even without finding the single track some of the quad trails can be quite challenging due to steep climbs and rock gardens. there are several fun downhills here.",
+                    "description": "In amongst the quad trail there are several miles of very good single track. Even without finding the single track some of the quad trail can be quite challenging due to steep climbs and rock gardens. there are several fun downhills here.",
                     "length": 16,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -1987,7 +1987,7 @@ var data = {
             "name": "War Finance Trail #9",
             "parent_id": null,
             "unique_id": 27154,
-            "directions": "This connector trail is accessible from various routes including Honeymoon Campground and trails #33 and #27.",
+            "directions": "This connector trail is accessible from various routes including Honeymoon Campground and trail #33 and #27.",
             "lat": 33.48159,
             "lon": -109.47494,
             "description": null,
@@ -2122,7 +2122,7 @@ var data = {
                         "\"length\"": "\"6\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "This is a four mile loop. I will also describe two possible ways that you could connect with the trail leading to the Presideo and to the end of the San Pedro trail system in Saint David. It is easiest to describe this loop trail going counter clockwise. From the map sign in the parking lot go North a short way along the path to the trail gate. Go through the gate and then ride the trail North. After a short distance there is a sign on the right marking the trail to the Fairbank Cemetery. No bikes are allowed on this trail. After about another mile there is a ruined mill on the right. About a half mile past this you'll come to a junction with a trail leading North down into a big wash. If you wanted to connect with the Presideo trail you would descend the trail to the dry wash. It is a short distance to the river which is usually quite shallow. You would then ford the river and make your way North and West. This is not a clearly marked trail. You would then cross the first abandoned railroad bed you come to and then make your way to the second railroad bed to the West. This is the trail leading North to the Presideo and beyond (see the Presideo Trail). To continue on this ride however just stay on the main trail as it heads West and then follows the  San Pedro River South. After about another mile you'll come to an abandoned railroad bridge on your right that leads across the river. It's possible to cross this bridge and connect with the Presideo trails (see the Presidio Trail) but for this ride follow the main trail South along the  abandoned railroad bed back to Fairbank. There are some sandy stretches on this section of the trail. Ride through the Fairbank tourist attraction and back to the parking lot to complete the four mile loop.",
+                    "description": "This is a four mile loop. I will also describe two possible ways that you could connect with the trail leading to the Presideo and to the end of the San Pedro trail system in Saint David. It is easiest to describe this loop trail going counter clockwise. From the map sign in the parking lot go North a short way along the path to the trail gate. Go through the gate and then ride the trail North. After a short distance there is a sign on the right marking the trail to the Fairbank Cemetery. No bikes are allowed on this trail. After about another mile there is a ruined mill on the right. About a half mile past this you'll come to a junction with a trail leading North down into a big wash. If you wanted to connect with the Presideo trail you would descend the trail to the dry wash. It is a short distance to the river which is usually quite shallow. You would then ford the river and make your way North and West. This is not a clearly marked trail. You would then cross the first abandoned railroad bed you come to and then make your way to the second railroad bed to the West. This is the trail leading North to the Presideo and beyond (see the Presideo Trail). To continue on this ride however just stay on the main trail as it heads West and then follows the  San Pedro River South. After about another mile you'll come to an abandoned railroad bridge on your right that leads across the river. It's possible to cross this bridge and connect with the Presideo trail (see the Presidio Trail) but for this ride follow the main trail South along the  abandoned railroad bed back to Fairbank. There are some sandy stretches on this section of the trail. Ride through the Fairbank tourist attraction and back to the parking lot to complete the four mile loop.",
                     "length": 6,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2200,7 +2200,7 @@ var data = {
                         "\"length\"": "\"38\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "If your idea of fun is an 18 mile/3000 foot climb up boring fire roads followed by a 15 mile descent down singletrack that will throw everything at you, ending with yet more brutal climbing, then this is for you.  The first part of the climb has a moderate grade, but the last half is brutal and unrelenting.  Be in shape or shuttle it--if I ever do this one again, I will.  As a shuttle, I'd give this four stars.  Climb up the Logging Creek road for 7 or so miles and head left when the road meets Divide Road (the sign will indicate you are going toward White Sulphur Springs.  Continue another 9 or so miles, past numerous trails.  When you see a sign on your left that says Deer Park, you're getting close.  A few more curves and you will see a sign indicating Pilgrim Creek to your left.  The singletrack starts off extremely rough--long fields of baby heads, both loose and embedded.  Then the trail begins its desdent.  It gets crazy steem in places--hang your b*** off the back or go over the bars.  There will be many drainage crossings with technical entry/exits.  You will also cross Pilgrim Creek numerous times. , not always rideabe, so you will get wet.  Along the route, you will encounter roots, rocks, drops, water, climbs, ruts, muddy bogs, loose dirt and sand--you name it.  This trail is also very remote and there is no escape from its interior--be self sufficient.  An adventure to be sure.",
+                    "description": "If your idea of fun is an 18 mile/3000 foot climb up boring fire roads followed by a 15 mile descent down singletrack that will throw everything at you, ending with yet more brutal climbing, then this is for you.  The first part of the climb has a moderate grade, but the last half is brutal and unrelenting.  Be in shape or shuttle it--if I ever do this one again, I will.  As a shuttle, I'd give this four stars.  Climb up the Logging Creek road for 7 or so miles and head left when the road meets Divide Road (the sign will indicate you are going toward White Sulphur Springs.  Continue another 9 or so miles, past numerous trail.  When you see a sign on your left that says Deer Park, you're getting close.  A few more curves and you will see a sign indicating Pilgrim Creek to your left.  The singletrack starts off extremely rough--long fields of baby heads, both loose and embedded.  Then the trail begins its desdent.  It gets crazy steem in places--hang your b*** off the back or go over the bars.  There will be many drainage crossings with technical entry/exits.  You will also cross Pilgrim Creek numerous times. , not always rideabe, so you will get wet.  Along the route, you will encounter roots, rocks, drops, water, climbs, ruts, muddy bogs, loose dirt and sand--you name it.  This trail is also very remote and there is no escape from its interior--be self sufficient.  An adventure to be sure.",
                     "length": 38,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2208,7 +2208,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/02/2765-1219593741.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/02/2765-1219593741.jpg",
                     "rank": null,
                     "rating": 4.5
                 }
@@ -2239,7 +2239,7 @@ var data = {
                         "\"length\"": "\"19\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Description:&lt;br /&gt;<br />Wadi Degla (&quot;wadi&quot; is Arabic for &quot;valley&quot;) lies in the northern part of the Eastern Desert and runs east to west for 30km to drain into the Nile Valley at Maadi, south of the Governorate of Cairo. The area, which encompasses 60 kmÂ², was declared a Natural Protectorate in 1999.&lt;br /&gt;<br />&lt;br /&gt;<br />The Wadi provides an excellent trail network for all skill levels.&lt;br /&gt;<br />&lt;br /&gt;<br />The great thing about Wadi Degla is that it offers a variety of great rides for all skill levels.&lt;br /&gt;<br />&lt;br /&gt;<br />Beginners:&lt;br /&gt;<br />&lt;br /&gt;<br />The main trail (wadi floor) is fun, easy ride that starts at the wadi gate and extends eastward for about 10.5km. Terrain is mostly light sand and gravel, with the occasional rough sections of scattered rocks or thicker sand, but nothing to trouble the beginner/average rider.&lt;br /&gt;<br />&lt;br /&gt;<br />Intermediate/Advanced:&lt;br /&gt;<br />&lt;br /&gt;<br />The north and south plateaus of the Wadi provide a vast network of trails that is sure to satisfy advanced riders.",
+                    "description": "Description:&lt;br /&gt;<br />Wadi Degla (&quot;wadi&quot; is Arabic for &quot;valley&quot;) lies in the northern part of the Eastern Desert and runs east to west for 30km to drain into the Nile Valley at Maadi, south of the Governorate of Cairo. The area, which encompasses 60 kmÂ², was declared a Natural Protectorate in 1999.&lt;br /&gt;<br />&lt;br /&gt;<br />The Wadi provides an excellent trail network for all skill levels.&lt;br /&gt;<br />&lt;br /&gt;<br />The great thing about Wadi Degla is that it offers a variety of great rides for all skill levels.&lt;br /&gt;<br />&lt;br /&gt;<br />Beginners:&lt;br /&gt;<br />&lt;br /&gt;<br />The main trail (wadi floor) is fun, easy ride that starts at the wadi gate and extends eastward for about 10.5km. Terrain is mostly light sand and gravel, with the occasional rough sections of scattered rocks or thicker sand, but nothing to trouble the beginner/average rider.&lt;br /&gt;<br />&lt;br /&gt;<br />Intermediate/Advanced:&lt;br /&gt;<br />&lt;br /&gt;<br />The north and south plateaus of the Wadi provide a vast network of trail that is sure to satisfy advanced riders.",
                     "length": 19,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2278,7 +2278,7 @@ var data = {
                         "\"length\"": "\"13\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "These flumes are similar to the Centerville Flumes but they are in the&lt;br /&gt;<br />canyon above the Feather River.  It is also sometimes referred to as&lt;br /&gt;<br />the Upper Miocene Canal.&lt;br /&gt;<br />&lt;br /&gt;<br />There are two main roads down to the flumes.&lt;br /&gt;<br />Dean Rd is the most frequently used road but it does not encapsulate&lt;br /&gt;<br />the full loop.  Feather River Pl is less used but includes more of the loop.&lt;br /&gt;<br />&lt;br /&gt;<br />Traveling down Feather River Pl to the end before it turns left you will&lt;br /&gt;<br />see a gate between two houses with warning signs about snakes and mountain lions.&lt;br /&gt;<br />Proceed through this gate and down the fire road and you will eventually&lt;br /&gt;<br />reach the flumes.&lt;br /&gt;<br />&lt;br /&gt;<br />The trail along the flumes consist of dirt single track and metal platforms.&lt;br /&gt;<br />Many of the platforms can be quite precarious and are very high up in the air&lt;br /&gt;<br />with little to no safety rails (be careful!).&lt;br /&gt;<br />Other than the minor technical terrain the ride is quite easy.&lt;br /&gt;<br />There is lots of nice scenery along with the sound of the raging Feather River below.&lt;br /&gt;<br />&lt;br /&gt;<br />There are numerous trails from the flumes down to swimming holes in the&lt;br /&gt;<br />Feather River.  At the end of the flumes one of the largest swimming&lt;br /&gt;<br />holes is behind a man made dam.  The pool is comparable in size to 1&lt;br /&gt;<br />mile in Bidwell Park.&lt;br /&gt;<br />&lt;br /&gt;<br />The fire road from the end of the flumes up to Magalia is grueling.&lt;br /&gt;<br />But once at the top it is an easy cruise down the paved roads (Skyway, Pentz)&lt;br /&gt;<br />back to the beginning.",
+                    "description": "These flumes are similar to the Centerville Flumes but they are in the&lt;br /&gt;<br />canyon above the Feather River.  It is also sometimes referred to as&lt;br /&gt;<br />the Upper Miocene Canal.&lt;br /&gt;<br />&lt;br /&gt;<br />There are two main roads down to the flumes.&lt;br /&gt;<br />Dean Rd is the most frequently used road but it does not encapsulate&lt;br /&gt;<br />the full loop.  Feather River Pl is less used but includes more of the loop.&lt;br /&gt;<br />&lt;br /&gt;<br />Traveling down Feather River Pl to the end before it turns left you will&lt;br /&gt;<br />see a gate between two houses with warning signs about snakes and mountain lions.&lt;br /&gt;<br />Proceed through this gate and down the fire road and you will eventually&lt;br /&gt;<br />reach the flumes.&lt;br /&gt;<br />&lt;br /&gt;<br />The trail along the flumes consist of dirt single track and metal platforms.&lt;br /&gt;<br />Many of the platforms can be quite precarious and are very high up in the air&lt;br /&gt;<br />with little to no safety rails (be careful!).&lt;br /&gt;<br />Other than the minor technical terrain the ride is quite easy.&lt;br /&gt;<br />There is lots of nice scenery along with the sound of the raging Feather River below.&lt;br /&gt;<br />&lt;br /&gt;<br />There are numerous trail from the flumes down to swimming holes in the&lt;br /&gt;<br />Feather River.  At the end of the flumes one of the largest swimming&lt;br /&gt;<br />holes is behind a man made dam.  The pool is comparable in size to 1&lt;br /&gt;<br />mile in Bidwell Park.&lt;br /&gt;<br />&lt;br /&gt;<br />The fire road from the end of the flumes up to Magalia is grueling.&lt;br /&gt;<br />But once at the top it is an easy cruise down the paved roads (Skyway, Pentz)&lt;br /&gt;<br />back to the beginning.",
                     "length": 13,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2338,7 +2338,7 @@ var data = {
             "name": "Back Country Expressway",
             "parent_id": null,
             "unique_id": 2044,
-            "directions": "From Sanford Me take route 11 to Limerick,Me then route 160 8 miles north then turn left onto Merrill Hill Road go 1.5 miles then a right onto Middle Road and an immediate left onto Woodward Road,  Continue down behind the white farmhouse to the Back Country Excursions sign.  Follow till road dead ends this is the beginnng of trail.  You might want to stop in at Back Country for other details and other trails nearby We're right there on the left where the road dead ends  ",
+            "directions": "From Sanford Me take route 11 to Limerick,Me then route 160 8 miles north then turn left onto Merrill Hill Road go 1.5 miles then a right onto Middle Road and an immediate left onto Woodward Road,  Continue down behind the white farmhouse to the Back Country Excursions sign.  Follow till road dead ends this is the beginnng of trail.  You might want to stop in at Back Country for other details and other trail nearby We're right there on the left where the road dead ends  ",
             "lat": 43.72306,
             "lon": -70.93083,
             "description": null,
@@ -2473,7 +2473,7 @@ var data = {
                         "\"length\"": "\"15\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Great network of trails on private resort that lets mtn. bikers use their trails for free.  Be sure to check in at the gift shop, and get their free map.  The 16 trails range from tough singletrack, to curvacous singletrack, to doubletrack.  There are no really long, strenuous climbs.  This is a multiuse trail system, and the resort caters to horse riders. They make a point to tell bikers to yield to horses.  Trails are well marked and mapped.  You can tent camp there for $25, or stay in a cabin for more.  ",
+                    "description": "Great network of trail on private resort that lets mtn. bikers use their trail for free.  Be sure to check in at the gift shop, and get their free map.  The 16 trail range from tough singletrack, to curvacous singletrack, to doubletrack.  There are no really long, strenuous climbs.  This is a multiuse trail system, and the resort caters to horse riders. They make a point to tell bikers to yield to horses.  Trails are well marked and mapped.  You can tent camp there for $25, or stay in a cabin for more.  ",
                     "length": 15,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2481,7 +2481,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/01/1149527712.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/01/1149527712.jpg",
                     "rank": null,
                     "rating": 3.67
                 }
@@ -2512,7 +2512,7 @@ var data = {
                         "\"length\"": "\"2\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Alright, so the first trail on the right leads to this small dirt bowl with some smaller jumps (big enough for me) where you can have some fun.  In the middle of the bowl, if you take a left, you'll hit some of the fastest single track in the Gyro, which has wider turns, is mostly flat, and with some nice dips here and there.  Also a  long 2 x 4 that clears a gap you can skip if you're not comfortable with it.  Follow the track and it will come out close to the river (this is also where one of the other trails connects, so be on the lookout for other bikers).  Take the track along the lake and continue on (you'll see some smaller dirt jumps), ride over the see-saw, and you'll be out of the system and amidst some small houses.  You're back out on the road.  Take a right, and you can go back to the gas station.&lt;br /&gt;<br />&lt;br /&gt;<br />The second trailhead on the right begins the twistier single track where you'll have to watch your handlebars and weasel through some tighter spots.  This track is the longest, goes all over the place, comes out close to the river, but then turns back into the woods.  The trail will pass through a clearing and end up where that first trail comes out.  You can either continue on toward the river and finish out on the road, or you can turn on the faster single track and end your trip with the dirt bowl and come back out on the dirt service road. The trail on the left is not very twisty, it's quite short (fun too), and will pass by an impressive BMX/DJ section, before coming out in the parking lot of the first gas station you had earlier passed.  Try to turn it all into a big loop! &lt;br /&gt;<br />&lt;br /&gt;<br />Optional: If you want, keep taking that dirt service road back, go over an old bridge with holes in it, and into a field.  Best in the springtime when the grass is lower, but still very Little House on the Prairie any time of year.  If you see ATV/bike tracks, follow them and watch out for animal dwellings.  This leads (hopefully) to gravel road that you climb to a paved road.  Take a left, go down the road, take another left onto the next road (175), and ride back into Plymouth.  ",
+                    "description": "Alright, so the first trail on the right leads to this small dirt bowl with some smaller jumps (big enough for me) where you can have some fun.  In the middle of the bowl, if you take a left, you'll hit some of the fastest single track in the Gyro, which has wider turns, is mostly flat, and with some nice dips here and there.  Also a  long 2 x 4 that clears a gap you can skip if you're not comfortable with it.  Follow the track and it will come out close to the river (this is also where one of the other trail connects, so be on the lookout for other bikers).  Take the track along the lake and continue on (you'll see some smaller dirt jumps), ride over the see-saw, and you'll be out of the system and amidst some small houses.  You're back out on the road.  Take a right, and you can go back to the gas station.&lt;br /&gt;<br />&lt;br /&gt;<br />The second trailhead on the right begins the twistier single track where you'll have to watch your handlebars and weasel through some tighter spots.  This track is the longest, goes all over the place, comes out close to the river, but then turns back into the woods.  The trail will pass through a clearing and end up where that first trail comes out.  You can either continue on toward the river and finish out on the road, or you can turn on the faster single track and end your trip with the dirt bowl and come back out on the dirt service road. The trail on the left is not very twisty, it's quite short (fun too), and will pass by an impressive BMX/DJ section, before coming out in the parking lot of the first gas station you had earlier passed.  Try to turn it all into a big loop! &lt;br /&gt;<br />&lt;br /&gt;<br />Optional: If you want, keep taking that dirt service road back, go over an old bridge with holes in it, and into a field.  Best in the springtime when the grass is lower, but still very Little House on the Prairie any time of year.  If you see ATV/bike tracks, follow them and watch out for animal dwellings.  This leads (hopefully) to gravel road that you climb to a paved road.  Take a left, go down the road, take another left onto the next road (175), and ride back into Plymouth.  ",
                     "length": 2,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2590,7 +2590,7 @@ var data = {
                         "\"length\"": "\"6\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "The Hamburg Trail links the Katy Trail to the August A. Busch Memorial Conservation Area. It is a 6 mile linear trail that makes a great wet weather alternative route and connects directly to the Katy Trail through the Weldon Spring Conservation Area.  The Hamburg can be used to link with the Lost Valley hiking and biking trail and the Lewis and Clark hiking trails within the Conservation Area.<br />The Hamburg Trail originally served heavy machinery transporting quarry rock during the construction of the nuclear waste containment cell - commonly referred to as The Mound.  A large parking lot is available at The Mound just off of Highway 94.  A museum at the base of The Mound can provide more information on the area.<br />.",
+                    "description": "The Hamburg Trail links the Katy Trail to the August A. Busch Memorial Conservation Area. It is a 6 mile linear trail that makes a great wet weather alternative route and connects directly to the Katy Trail through the Weldon Spring Conservation Area.  The Hamburg can be used to link with the Lost Valley hiking and biking trail and the Lewis and Clark hiking trail within the Conservation Area.<br />The Hamburg Trail originally served heavy machinery transporting quarry rock during the construction of the nuclear waste containment cell - commonly referred to as The Mound.  A large parking lot is available at The Mound just off of Highway 94.  A museum at the base of The Mound can provide more information on the area.<br />.",
                     "length": 6,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2629,7 +2629,7 @@ var data = {
                         "\"length\"": "\"30\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Network of single track and jeep trails.  The single track is pretty good.  Very &lt;br /&gt;<br />rocky in areas.  Some of the trails require travel on the jeep roads as a &lt;br /&gt;<br />connector.",
+                    "description": "Network of single track and jeep trail.  The single track is pretty good.  Very &lt;br /&gt;<br />rocky in areas.  Some of the trail require travel on the jeep roads as a &lt;br /&gt;<br />connector.",
                     "length": 30,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2746,7 +2746,7 @@ var data = {
                         "\"length\"": "\"47\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "The Warm Springs Creek and Ridge Trails have some of the best singletrack, best views, and best fun around.  These trails will challenge intermediate to advanced and expert riders.<br /><br />&lt;b&gt;Access information:&lt;/b&gt;<br /><br />The Warm Springs Trails can be accessed from three areas. Loops start from two trailheads on the Medicine Springs Road about 3 miles north of Sula, MT on US-93; Warm Springs Ridge Trailhead and Warms Springs Creek Trailhead adjacent to Crazy Creek Campground 4 miles up the Medicine Springs Road.<br /><br />Shuttles start at the top of Lost Trail Ski Area just off of Lost Trail Pass on US-93 at the Idaho/Montana stateline. Drive through the ski area parking lot and take the road just to the left of the ski area lodge and ski shop buildings. It is about 3 miles to the Colter Creek Trail on this road, but a good shuttle dropoff spot is at the clearing where the road levels out.<br /><br />You can also shuttle from the Porcupine Saddle Trailhead at the end of USFS Road #8112. This road is accessed near Indian Trees Campground and Lost Trail Hot Springs and it is 8.5 miles from US-93 to the trailhead.",
+                    "description": "The Warm Springs Creek and Ridge Trails have some of the best singletrack, best views, and best fun around.  These trail will challenge intermediate to advanced and expert riders.<br /><br />&lt;b&gt;Access information:&lt;/b&gt;<br /><br />The Warm Springs Trails can be accessed from three areas. Loops start from two trailheads on the Medicine Springs Road about 3 miles north of Sula, MT on US-93; Warm Springs Ridge Trailhead and Warms Springs Creek Trailhead adjacent to Crazy Creek Campground 4 miles up the Medicine Springs Road.<br /><br />Shuttles start at the top of Lost Trail Ski Area just off of Lost Trail Pass on US-93 at the Idaho/Montana stateline. Drive through the ski area parking lot and take the road just to the left of the ski area lodge and ski shop buildings. It is about 3 miles to the Colter Creek Trail on this road, but a good shuttle dropoff spot is at the clearing where the road levels out.<br /><br />You can also shuttle from the Porcupine Saddle Trailhead at the end of USFS Road #8112. This road is accessed near Indian Trees Campground and Lost Trail Hot Springs and it is 8.5 miles from US-93 to the trailhead.",
                     "length": 47,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2767,7 +2767,7 @@ var data = {
             "name": "Mission Creek Greenway",
             "parent_id": null,
             "unique_id": 26334,
-            "directions": "http://www.greenway.kelowna.bc.ca/greenway-trails/getting-there-and-parking",
+            "directions": "http://www.greenway.kelowna.bc.ca/greenway-trail/getting-there-and-parking",
             "lat": 49.84275,
             "lon": -119.48748,
             "description": null,
@@ -2785,7 +2785,7 @@ var data = {
                         "\"length\"": "\"16\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "http://www.greenway.kelowna.bc.ca/greenway-trails/features-as-you-walk&lt;br /&gt;<br />&lt;br /&gt;<br />Phase 1 and 2 are a fairly wide graveled path, at the end of Phase 2 is the Mountain Bike Skills Park. Phase 3 has some climbing that offers some great views",
+                    "description": "http://www.greenway.kelowna.bc.ca/greenway-trail/features-as-you-walk&lt;br /&gt;<br />&lt;br /&gt;<br />Phase 1 and 2 are a fairly wide graveled path, at the end of Phase 2 is the Mountain Bike Skills Park. Phase 3 has some climbing that offers some great views",
                     "length": 16,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2902,7 +2902,7 @@ var data = {
                         "\"length\"": "\"5\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Comprised of two loops (with expansion plans in the future). First loop is called waterfall loop. about 2 miles. It is an intermediate single track with excellent opportunities to practice skills in a low risk environment. Omega loop is similar terrain with a couple of sections that can be fast if you want them to be. Fun trails if you live in the area. You will get a work out. Plenty of rock gardens to keep you on your toes.<br /><br />&lt;b&gt;Description from fredgames:&lt;/b&gt;<br />Brier Creek consists of two stacked loops with a connector in between. The first loop is called Waterfall and second Omega. There is also a new, beautiful connector trail that goes off Omega. It has great lake views as well as rock outcroppings and a waterfall. At the end of the connector trail you cross two pontoons to get on the Pointe Loop. This is still under construction but should be done by Fall 2014. There is also a downhill flow trail in the works. This is a great trail system, a diamond in the rough that is roughly 10 miles from the Big Hollow Trail system at Mammoth Cave.",
+                    "description": "Comprised of two loops (with expansion plans in the future). First loop is called waterfall loop. about 2 miles. It is an intermediate single track with excellent opportunities to practice skills in a low risk environment. Omega loop is similar terrain with a couple of sections that can be fast if you want them to be. Fun trail if you live in the area. You will get a work out. Plenty of rock gardens to keep you on your toes.<br /><br />&lt;b&gt;Description from fredgames:&lt;/b&gt;<br />Brier Creek consists of two stacked loops with a connector in between. The first loop is called Waterfall and second Omega. There is also a new, beautiful connector trail that goes off Omega. It has great lake views as well as rock outcroppings and a waterfall. At the end of the connector trail you cross two pontoons to get on the Pointe Loop. This is still under construction but should be done by Fall 2014. There is also a downhill flow trail in the works. This is a great trail system, a diamond in the rough that is roughly 10 miles from the Big Hollow Trail system at Mammoth Cave.",
                     "length": 5,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -2941,7 +2941,7 @@ var data = {
                         "\"length\"": "\"7\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "It is important to note that Mile Creek Trail is part of the Continental Divide Trail system, so it connects to other trails of various difficulties.  Mile Creek Trail itself is a great 14-mile out-and-back jaunt.  At first, it gradually rolls up at the base of the mountains; when in the trees, it gets a bit steeper until you hit the switchbacks, of which there are many; however, the pitch isn't too steep.  There are some loose, large rocks here and there, but they are easy to avoid.  You climb to about 10,000 ft. when you get to the turnaround point.  Of course, the trail continues down the other side, if you want to explore.  Do further research of the area.  Be careful of bears.  Hikers and bikers are cautioned to not hike/ride alone, but if you are careful, carry bear spray, you should be okay.  I saw one, small black bear, but there are grizzlies.  I heard a local story that a biker was attacked by a grizzly years ago.  Just use caution and enjoy the incredible scenery.",
+                    "description": "It is important to note that Mile Creek Trail is part of the Continental Divide Trail system, so it connects to other trail of various difficulties.  Mile Creek Trail itself is a great 14-mile out-and-back jaunt.  At first, it gradually rolls up at the base of the mountains; when in the trees, it gets a bit steeper until you hit the switchbacks, of which there are many; however, the pitch isn't too steep.  There are some loose, large rocks here and there, but they are easy to avoid.  You climb to about 10,000 ft. when you get to the turnaround point.  Of course, the trail continues down the other side, if you want to explore.  Do further research of the area.  Be careful of bears.  Hikers and bikers are cautioned to not hike/ride alone, but if you are careful, carry bear spray, you should be okay.  I saw one, small black bear, but there are grizzlies.  I heard a local story that a biker was attacked by a grizzly years ago.  Just use caution and enjoy the incredible scenery.",
                     "length": 7,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3019,7 +3019,7 @@ var data = {
                         "\"length\"": "\"23\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Quite possibly the best singletrack in OH. Well maintained trails and very flowy. Low on the technical side, but the flow and speed you can carry, coupled with the relative distance of the loops (25 miles or so of pure singletrack) make it darn near impossible to beat in OH. Have fun!",
+                    "description": "Quite possibly the best singletrack in OH. Well maintained trail and very flowy. Low on the technical side, but the flow and speed you can carry, coupled with the relative distance of the loops (25 miles or so of pure singletrack) make it darn near impossible to beat in OH. Have fun!",
                     "length": 23,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3027,7 +3027,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/02/2166-1202565337.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/02/2166-1202565337.jpg",
                     "rank": null,
                     "rating": 4.24
                 }
@@ -3214,7 +3214,7 @@ var data = {
                         "\"length\"": "\"20\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "There are heaps of options for a good variety of rides on this working sheep farm with magnificent views over plains, mountains and sea. ---&lt;br /&gt;<br />&lt;br /&gt;<br />The Rifle Range track is the only specific mountain bike trail.  It's an easy and very pleasant trail to take around the base of the hills as you head back to your car or to town. ---&lt;br /&gt;<br />&lt;br /&gt;<br />The fitness challenge is to ride up the 400 metres to the summit of Mount Varnon.  The views are stupendous on a good day.  On a bad day you don't want to be there! The best way up is perhaps via Mapp Track and Cob Cottage Track. I went straight up the Mount Vernon track but it's too steep to ride for some of the way.  Another way up is from the top of the mountain bike park on the Taylor View Track.  But all the trails are two way four wheel drive farm tracks so you can take your pick!",
+                    "description": "There are heaps of options for a good variety of rides on this working sheep farm with magnificent views over plains, mountains and sea. ---&lt;br /&gt;<br />&lt;br /&gt;<br />The Rifle Range track is the only specific mountain bike trail.  It's an easy and very pleasant trail to take around the base of the hills as you head back to your car or to town. ---&lt;br /&gt;<br />&lt;br /&gt;<br />The fitness challenge is to ride up the 400 metres to the summit of Mount Varnon.  The views are stupendous on a good day.  On a bad day you don't want to be there! The best way up is perhaps via Mapp Track and Cob Cottage Track. I went straight up the Mount Vernon track but it's too steep to ride for some of the way.  Another way up is from the top of the mountain bike park on the Taylor View Track.  But all the trail are two way four wheel drive farm tracks so you can take your pick!",
                     "length": 20,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3253,7 +3253,7 @@ var data = {
                         "\"length\"": "\"28\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "This group of interconnecting shady trails are a great ride/or hike for the entire family, because there are no major obstacles. The outer perimeter is a 28-mile loop, but various connectors enable you to lengthen or shorten your ride There are several points of interest, including old cemeteries, creek crossings, wagon roads, and plantation sites. Wildflowers dot portions of the trail and in the springtime dogwoods offer brilliant displays of color. The trail is primarily gravel or Piedmont clay.  &lt;br /&gt;<br />&lt;br /&gt;<br />It is recommended that horses be shod. Since these trails are shared, you may encounter hikers or mountain bikers. Insect repellent is recommended during warm months.&lt;br /&gt;<br />&lt;br /&gt;<br />Trail Lengths: Outer perimeter: 28 miles. Connectors: Blue 5.75 miles, Purple 9.0 miles, White 12.7 miles, Green 1.25 miles, Gray 0.75 mile, Red 2.25 miles, and Palmetto Trail 8.0 miles.&lt;br /&gt;<br />&lt;br /&gt;<br />Fees: Daily $3 per vehicle, or yearly $25 per vehicle. A fine will be charged for failure to pay the fee.&lt;br /&gt;<br />&lt;br /&gt;<br />",
+                    "description": "This group of interconnecting shady trail are a great ride/or hike for the entire family, because there are no major obstacles. The outer perimeter is a 28-mile loop, but various connectors enable you to lengthen or shorten your ride There are several points of interest, including old cemeteries, creek crossings, wagon roads, and plantation sites. Wildflowers dot portions of the trail and in the springtime dogwoods offer brilliant displays of color. The trail is primarily gravel or Piedmont clay.  &lt;br /&gt;<br />&lt;br /&gt;<br />It is recommended that horses be shod. Since these trail are shared, you may encounter hikers or mountain bikers. Insect repellent is recommended during warm months.&lt;br /&gt;<br />&lt;br /&gt;<br />Trail Lengths: Outer perimeter: 28 miles. Connectors: Blue 5.75 miles, Purple 9.0 miles, White 12.7 miles, Green 1.25 miles, Gray 0.75 mile, Red 2.25 miles, and Palmetto Trail 8.0 miles.&lt;br /&gt;<br />&lt;br /&gt;<br />Fees: Daily $3 per vehicle, or yearly $25 per vehicle. A fine will be charged for failure to pay the fee.&lt;br /&gt;<br />&lt;br /&gt;<br />",
                     "length": 28,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3292,7 +3292,7 @@ var data = {
                         "\"length\"": "\"3\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "The trails are very limited, and excellent for families. One set of trails shares with a frisbee golf course. Excellent for the beginner just wanting to strech his/her legs for the first time.",
+                    "description": "The trail are very limited, and excellent for families. One set of trail shares with a frisbee golf course. Excellent for the beginner just wanting to strech his/her legs for the first time.",
                     "length": 3,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3370,7 +3370,7 @@ var data = {
                         "\"length\"": "\"5\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Mostly Double track, some trail off limits to bicycle.  It's a defunct quarry with some hiking biking rock climbing swimming and scuba. Bike trails generally flat except some &lt;br /&gt;<br />brief single track tech areas, one features a nice rock climb.",
+                    "description": "Mostly Double track, some trail off limits to bicycle.  It's a defunct quarry with some hiking biking rock climbing swimming and scuba. Bike trail generally flat except some &lt;br /&gt;<br />brief single track tech areas, one features a nice rock climb.",
                     "length": 5,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3394,7 +3394,7 @@ var data = {
             "directions": "Rosaryville State Park is located in Upper Marlboro, 10 minutes from the Beltway.",
             "lat": 38.775854,
             "lon": -76.81896,
-            "description": "Rosaryville is a 982 acre day-use park and the location of the historic Mount Airy Mansion. Miles of trails for hiking, biking and equestrians are available for day use. To gain access to Rosaryville State Park, make a right turn into the entrance just south of Osborne Road while traveling south on U.S. 301.",
+            "description": "Rosaryville is a 982 acre day-use park and the location of the historic Mount Airy Mansion. Miles of trail for hiking, biking and equestrians are available for day use. To gain access to Rosaryville State Park, make a right turn into the entrance just south of Osborne Road while traveling south on U.S. 301.",
             "date_created": null,
             "children": [],
             "activities": [
@@ -3409,7 +3409,7 @@ var data = {
                         "\"length\"": "\"10\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Trail Description: Rosaryville is an excellent mountain biking and equestrian destination with a main perimeter trail 8 miles in length. It consists of a lot of tight twisty singletrack with some short steep hills built and designed in cooperation with IMBA's trail building guru and former trail crew member Rich Edwards. There are beautiful overlooks, awesome flora and fauna, large open fields. The trails offer something for all levels, but tend toward moderate speed singletrack, with moderate climbs, and most of the trail is under the cool canopy of mature hardwoods. Some technical sections will require beginners to dismount, but intermediate riders should find most sections rideable and challenging. Trails are not crowded, but keep a close eye out for the occasional equestrian rider or hiker. <br /><br />Cost for park access is $3 per Md. car and $4 per out of state vehicle. Ride in access is free so park at the nearby shopping center and ride in! Trail maps are available at the Mt. Airy mansion on the other side of the park off Rosaryville Rd. 8-4 weekdays or at the Cedarville Park complex or on the DNR web site at http://www.dnr.state.md.us/publiclands/trailguides.html",
+                    "description": "Trail Description: Rosaryville is an excellent mountain biking and equestrian destination with a main perimeter trail 8 miles in length. It consists of a lot of tight twisty singletrack with some short steep hills built and designed in cooperation with IMBA's trail building guru and former trail crew member Rich Edwards. There are beautiful overlooks, awesome flora and fauna, large open fields. The trail offer something for all levels, but tend toward moderate speed singletrack, with moderate climbs, and most of the trail is under the cool canopy of mature hardwoods. Some technical sections will require beginners to dismount, but intermediate riders should find most sections rideable and challenging. Trails are not crowded, but keep a close eye out for the occasional equestrian rider or hiker. <br /><br />Cost for park access is $3 per Md. car and $4 per out of state vehicle. Ride in access is free so park at the nearby shopping center and ride in! Trail maps are available at the Mt. Airy mansion on the other side of the park off Rosaryville Rd. 8-4 weekdays or at the Cedarville Park complex or on the DNR web site at http://www.dnr.state.md.us/publiclands/trailguides.html",
                     "length": 10,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3469,7 +3469,7 @@ var data = {
             "name": "Rock Point ",
             "parent_id": null,
             "unique_id": 14436,
-            "directions": "This group of trails lies to the west  of the Burlington bike path on rock point &lt;br /&gt;&lt;br /&gt;pennisula, which is just north of North beach. There are a few ways to access these &lt;br /&gt;&lt;br /&gt;trails. If you are driving it would be easiest to park at the high school and ride the BHS trails en route, which exit right onto the bike path a little north of the rock point entrance. &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;There are a couple discreet and easy to miss trails that branch off from the bike path between the train bridge and the BHS trail exit. Another way to reach the trails is by going down rock point rd, (staying to the north)&lt;br /&gt;&lt;br /&gt;and entering the trail near the cove. &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Loop/connector trail coming soon!",
+            "directions": "This group of trail lies to the west  of the Burlington bike path on rock point &lt;br /&gt;&lt;br /&gt;pennisula, which is just north of North beach. There are a few ways to access these &lt;br /&gt;&lt;br /&gt;trail. If you are driving it would be easiest to park at the high school and ride the BHS trail en route, which exit right onto the bike path a little north of the rock point entrance. &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;There are a couple discreet and easy to miss trail that branch off from the bike path between the train bridge and the BHS trail exit. Another way to reach the trail is by going down rock point rd, (staying to the north)&lt;br /&gt;&lt;br /&gt;and entering the trail near the cove. &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Loop/connector trail coming soon!",
             "lat": 44.49862,
             "lon": -73.24581,
             "description": null,
@@ -3487,7 +3487,7 @@ var data = {
                         "\"length\"": "\"2\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "This is the most technical section of biking in Burlington. Not for beginners on hard tails. The trail traverses along large cliffs, with many &lt;br /&gt;<br />short, but tricky technical climbs and descents. Many great spots to swim and stop for a break. Riding is mostly on rugged bedrock and roots &lt;br /&gt;<br />with some hardpack in between. Currently the trail is a one way, with an &lt;br /&gt;<br />exit/ entrance onto north beach&lt;br /&gt;<br />&lt;br /&gt;<br />&lt;br /&gt;<br />I have been building/ working on this trail a lot recently, so look for new &lt;br /&gt;<br />trails with ladder bridges, berms and fun lines etc",
+                    "description": "This is the most technical section of biking in Burlington. Not for beginners on hard tails. The trail traverses along large cliffs, with many &lt;br /&gt;<br />short, but tricky technical climbs and descents. Many great spots to swim and stop for a break. Riding is mostly on rugged bedrock and roots &lt;br /&gt;<br />with some hardpack in between. Currently the trail is a one way, with an &lt;br /&gt;<br />exit/ entrance onto north beach&lt;br /&gt;<br />&lt;br /&gt;<br />&lt;br /&gt;<br />I have been building/ working on this trail a lot recently, so look for new &lt;br /&gt;<br />trail with ladder bridges, berms and fun lines etc",
                     "length": 2,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3526,7 +3526,7 @@ var data = {
                         "\"length\"": "\"40\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Belgrad Forest is a natural forest located north of Istanbul. It is a popular picnic area and may be crowded at the weekends, but the trails are quiet most of the times. There are many options from easy to technical tracks, some on dirt and some asphalt is also available. The forest is located near Black Sea coast and the elevation changes wildly across the forest, so be prepared for a lot of downhills (and climb of course!). The track is usually a car-width.",
+                    "description": "Belgrad Forest is a natural forest located north of Istanbul. It is a popular picnic area and may be crowded at the weekends, but the trail are quiet most of the times. There are many options from easy to technical tracks, some on dirt and some asphalt is also available. The forest is located near Black Sea coast and the elevation changes wildly across the forest, so be prepared for a lot of downhills (and climb of course!). The track is usually a car-width.",
                     "length": 40,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3573,7 +3573,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/01/1086056545.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/01/1086056545.jpg",
                     "rank": null,
                     "rating": 2.5
                 }
@@ -3604,7 +3604,7 @@ var data = {
                         "\"length\"": "\"3\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Spring Lake Park contains 37.2 acres and is the <br />city's largest park. The north ¼ of the park has been cleaned, trails opened, and a parking lot. Fall 2007 a <br />bridge across the small creek will be built, and permanent steps have been built in the falls area. Though it is visited regularly, the park holds considerable potential <br />as a restored natural area with multi-use trails and public restrooms.",
+                    "description": "Spring Lake Park contains 37.2 acres and is the <br />city's largest park. The north ¼ of the park has been cleaned, trail opened, and a parking lot. Fall 2007 a <br />bridge across the small creek will be built, and permanent steps have been built in the falls area. Though it is visited regularly, the park holds considerable potential <br />as a restored natural area with multi-use trail and public restrooms.",
                     "length": 3,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3643,7 +3643,7 @@ var data = {
                         "\"length\"": "\"17\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "I visited DV while on vacation from Florida and I was not disappointed. DV valley has a lot of limestone and rocks to contend with. There are great climbs and even better descents that will challenge most riders. The trails are well marked and mapped out but if you are not familiar with the place it could be overwhelming. DV is what MTB Texas Hill country is all about.",
+                    "description": "I visited DV while on vacation from Florida and I was not disappointed. DV valley has a lot of limestone and rocks to contend with. There are great climbs and even better descents that will challenge most riders. The trail are well marked and mapped out but if you are not familiar with the place it could be overwhelming. DV is what MTB Texas Hill country is all about.",
                     "length": 17,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3682,7 +3682,7 @@ var data = {
                         "\"length\"": "\"17\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "11 mile climb up jeep trails to Little Pine Mtn.  Then 6 miles of downhill, 3300 ft &lt;br /&gt;<br />elevation drop.  Some of everything on this trail!",
+                    "description": "11 mile climb up jeep trail to Little Pine Mtn.  Then 6 miles of downhill, 3300 ft &lt;br /&gt;<br />elevation drop.  Some of everything on this trail!",
                     "length": 17,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3721,7 +3721,7 @@ var data = {
                         "\"length\"": "\"4\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "Old trails from Gorrick races.  Some used for motorbike enduro events",
+                    "description": "Old trail from Gorrick races.  Some used for motorbike enduro events",
                     "length": 4,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3799,7 +3799,7 @@ var data = {
                         "\"length\"": "\"1\"",
                         "\"nightride\"": "null"
                     },
-                    "description": "This is a short trail, usually very sandy unless it's rained. The &quot;bowl&quot; has little drop offs that are pretty fun, and there's a few trails running a mile or so. Even if it hasn't, there's usually plenty of water to go in :)",
+                    "description": "This is a short trail, usually very sandy unless it's rained. The &quot;bowl&quot; has little drop offs that are pretty fun, and there's a few trail running a mile or so. Even if it hasn't, there's usually plenty of water to go in :)",
                     "length": 1,
                     "activity_type": {
                         "created_at": "2012-08-15T16:12:35Z",
@@ -3846,7 +3846,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/02/2642-1214188836.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/02/2642-1214188836.jpg",
                     "rank": null,
                     "rating": 0
                 }
@@ -3924,7 +3924,7 @@ var data = {
                         "name": "mountain biking",
                         "updated_at": "2012-08-15T16:12:35Z"
                     },
-                    "thumbnail": "http://images.singletracks.com/2009/trails/01/1309-1222440044.jpg",
+                    "thumbnail": "http://images.singletracks.com/2009/trail/01/1309-1222440044.jpg",
                     "rank": null,
                     "rating": 3
                 }
@@ -3984,50 +3984,102 @@ var cheerio = require('cheerio');
 var request = require('request');
 
 
-for (var i = 0; i < data.places.length; i++) {
-    var element = data.places[i];
-    element.url = element.activities[0].url;
-    element.description = element.activities[0].description;
-    element.length = element.activities[0].length;
-    element.thumb = element.activities[0].thumbnail;
-    element.rating = element.activities[0].rating;
-
-    url = element.url;
-
-
-    // The structure of our request call
-    // The first parameter is our URL
-    // The callback function takes 3 parameters, an error, response status code and the html
-
-    request(url, function (error, response, html) {
-
-        // First we'll check to make sure no errors occurred when making the request
-
-        if (!error) {
-            // Next, we'll utilize the cheerio library on the returned html which will essentially give us jQuery functionality
-
-            var $ = cheerio.load(html);
-            // Finally, we'll define the variables we're going to capture
-
-            $('#st_difficulty').filter(function () {
-                var stuff = $(this);
-                element.difficulty = stuff.text();
-            });
-        }
-    })
-
-    delete element.parent_id;
-    delete element.description;
-    delete element.unique_id;
-    delete element.directions;
-    delete element.date_created;
-    delete element.children;
-    delete element.activities;
-}
+// for (var i = 0; i < data.places.length; i++) {
+//     var element = data.places[i];
+//     element.url = element.activities[0].url;
+//     element.description = element.activities[0].description;
+//     element.length = element.activities[0].length;
+//     element.thumb = element.activities[0].thumbnail;
+//     element.rating = element.activities[0].rating;
+//
+//     url = element.url;
+//
+//
+//     // The structure of our request call
+//     // The first parameter is our URL
+//     // The callback function takes 3 parameters, an error, response status code and the html
+//
+//     request(url, function (error, response, html) {
+//
+//         // First we'll check to make sure no errors occurred when making the request
+//
+//         if (!error) {
+//             // Next, we'll utilize the cheerio library on the returned html which will essentially give us jQuery functionality
+//
+//             var $ = cheerio.load(html);
+//             // Finally, we'll define the variables we're going to capture
+//
+//             $('#st_difficulty').filter(function () {
+//                 var stuff = $(this);
+//                 element.difficulty = stuff.text();
+//             });
+//         }
+//     })
+//
+//     delete element.parent_id;
+//     delete element.description;
+//     delete element.unique_id;
+//     delete element.directions;
+//     delete element.date_created;
+//     delete element.children;
+//     delete element.activities;
+// }
 
 
 //console.log(JSON.stringify(data.places));
+//
+// fs.createWriteStream('data.json', JSON.stringify(data.places), function (err) {
+//     console.log('done')
+// });
 
-fs.writeFile('data.json', JSON.stringify(data.places), function (err) {
-    console.log('done')
-});
+
+var config = require('../config');
+var GoogleMapsAPI = require("googlemaps");
+var _ = require("lodash");
+var publicConfig = {
+    key: config.googleAPIKey,
+    stagger_time: 1000, // for elevationPath
+    encode_polylines: false,
+    secure: true // use https
+};
+// var gmAPI = new GoogleMapsAPI(publicConfig);
+// var check = {};
+//
+// var geocodeParams = {
+//     "address":    "84103"
+// };
+//
+// gmAPI.geocode(geocodeParams, function (err, result) {
+//     console.log(result.results[0].geometry.location);
+//     if (err) {
+//         //TODO do some error thing
+//         console.trace(err);
+//     } else {
+//         check = result;
+//     }
+// });
+
+
+function getAllElementsWithAttribute(attribute)
+{
+    let matchingElements = [];
+    let coords = document.getElementsByTagName('trpkt')[0].getAttribute(lat);
+    let name = document.getElementsByTagName('name')[0].innerText;
+    return matchingElements;
+}
+getAllElementsWithAttribute('data-foo');
+
+fs.readdir("./data/gpx_data");
+fs.createReadStream("./data/gpx_data" + '*.gpx', (err, data) => {
+    if (err) {
+        console.trace(err)
+    } else {
+        // do that stuff up there! ^^^^
+        fs.createWriteStream('data.json', JSON.stringify(data.places), function (err) {
+            if(err){
+                
+            }
+            console.log('done')
+        });
+    }
+})

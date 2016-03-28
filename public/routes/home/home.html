@@ -1,34 +1,43 @@
 <section class="intro">
     <div class="jumbotron">
-        <div>Tired of doing the same route week after week because you can't find new routes to ride?</div>
-        <div>Well, check it.</div>
-        <div>Fill in the info below and we'll find a trail for you. ezpz</div>
+        <p>Tired of doing the same route week after week because you can't find new routes to ride?</p>
+        <p>Well, check it.</p>
+        <p>Fill in the info below and we'll find a trail for you. ezpz</p>
     </div>
 </section>
 <section>
-    <form class="menu" action="" name="formIn" novalidate>
-        <div class="fieldHolder">
-            <label for="zip">Zipcode: </label>
-            <input name="zip" id="zip" ng-model="zip" type="text" required placeholder="12345" >
+    <form class="jumbotron  form-horizontal" name="formIn" novalidate>
+        <div class="form-group center-block">
+            <label for="zip" class="col-sm-2 control-label">Zipcode: </label>
+            <div class="col-sm-10">
+                <input class="form-control" name="zip" id="zip" ng-model="zip" type="text" required
+                       placeholder="12345">
+            </div>
         </div>
-        <div class="fieldHolder">
-            <label for="difficulty">Difficulty: </label>
-            <select name="difficulty" id="difficulty" ng-model="diffOptions.selectedOption" ng-options="option.name for option in diffOptions.availableOptions track by option.id">
-            </select>
+        <div class="form-group center-block">
+            <label for="difficulty" class="col-sm-2 control-label">Difficulty: </label>
+            <div class="col-sm-10">
+                <select class="form-control" name="difficulty" id="difficulty" ng-model="diffOptions.selectedOption"
+                        ng-options="option.name for option in diffOptions.availableOptions track by option.id">
+                </select>
+            </div>
         </div>
-        <div class="fieldHolder">
-            <label for="rideLength">How many miles do you want to ride? </label>
-            <select name="rideLength" id="rideLength" ng-model="lenOptions.selectedOption" ng-options="option.name for option in lenOptions.availableOptions track by option.id">
-            </select>
+        <div class="form-group center-block">
+            <label for="rideLength" class="col-sm-2 control-label">How many miles do you want to ride? </label>
+            <div class="col-sm-10">
+                <select class="form-control" name="rideLength" id="rideLength" ng-model="lenOptions.selectedOption"
+                        ng-options="option.name for option in lenOptions.availableOptions track by option.id">
+                </select>
+            </div>
         </div>
-        <div class="fieldHolder">
-            <label for="driveDist">How far out should we look for routes? </label>
-            <select name="driveDist" id="driveDist" ng-model="distOptions.selectedOption" ng-options="option.name for option in distOptions.availableOptions track by option.id">
-            </select>
+        <div class="form-group center-block">
+            <label for="driveDist" class="col-sm-2 control-label">How far out should we look for routes? </label>
+            <div class="col-sm-10">
+                <select class="form-control" name="driveDist" id="driveDist" ng-model="distOptions.selectedOption"
+                        ng-options="option.name for option in distOptions.availableOptions track by option.id">
+                </select>
+            </div>
         </div>
-
-        <button class="submit btn btn-primary-outline" ng-click="submitForm()" type="submit" >Leggo</button>
+        <button class="submit btn " ng-click="submitForm()">Leggo</button>
     </form>
 </section>
-
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>

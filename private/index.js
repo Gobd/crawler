@@ -26,17 +26,17 @@ app.use(session({
     resave: false
 }));
 app.use(express.static(__dirname + "/public"));
-app.listen(port);
 app.use(bodyParser.json());
 app.use(cors());
+app.listen(port);
+
 
 //open connection to mongo
 mongoose.set("debug", true);
-mongoose.connect("mongodb://localhost/products");
+mongoose.connect("mongodb://localhost/trails");
 mongoose.connection.once("open", function () {
     console.log("connected to mongodb")
-
 });
 
 app.post('/trails', mainCtrl.postTrails);
-app.get('/', maintCtrl.getTrail);
+app.post('/', mainCtrl.getTrail);

@@ -2,34 +2,34 @@
  * Created by Tom on 2/19/2016.
  */
 
-angular.module('myApp').controller('homeControl', function ($scope, service, $http) {
+angular.module('myApp').controller('homeControl', function ($scope, service) {
 
     //menu options
     $scope.diffOptions = {
         availableOptions: [
-            {id: 1, name: "Beginner"},
-            {id: 2, name: "Intermediate"},
-            {id: 3, name: "Advanced"}
+            {id: "Beginner", name: "Beginner"},
+            {id: "Intermediate", name: "Intermediate"},
+            {id: "Difficult", name: "Difficult"}
         ],
-        selectedOption: {id: 1, name: "Beginner"}
+        selectedOption: {id: "Beginner", name: "Beginner"}
     };
     $scope.lenOptions = {
         availableOptions: [
-            {id: 1, name: "5"},
-            {id: 2, name: "10"},
-            {id: 3, name: "20"},
-            {id: 4, name: "A lot"}
+            {id: 5, name: "5"},
+            {id: 10, name: "10"},
+            {id: 20, name: "20"},
+            {id: 100, name: "A lot"}
         ],
-        selectedOption: {id: 1, name: "5"}
+        selectedOption: {id: 5, name: "5"}
     };
     $scope.distOptions = {
         availableOptions: [
-            {id: 1, name: "10"},
-            {id: 2, name: "20"},
-            {id: 3, name: "50"},
-            {id: 4, name: "Really far"}
+            {id: 10, name: "10"},
+            {id: 20, name: "20"},
+            {id: 50, name: "50"},
+            {id: 300, name: "Really far"}
         ],
-        selectedOption: {id: 1, name: "10"}
+        selectedOption: {id: 10, name: "10"}
     };
 
     //TODO get update working with minlength so that form is only valid once full zip is entered
@@ -60,12 +60,10 @@ angular.module('myApp').controller('homeControl', function ($scope, service, $ht
     var request = {};
     $scope.submitForm = function () {
         request.zip = $scope.zip;
-        request.difficulty = $scope.diffOptions.selectedOption;
-        request.length = $scope.lenOptions.selectedOption;
-        request.distance = $scope.distOptions.selectedOption;
-
-        $http.get();
-
+        request.difficulty = $scope.diffOptions.selectedOption.id;
+        request.length = $scope.lenOptions.selectedOption.id;
+        request.distance = $scope.distOptions.selectedOption.id;
+        service.postForm(request);
     };
 
 });

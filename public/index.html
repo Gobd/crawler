@@ -15,29 +15,34 @@
 <body>
 <!-- Static navbar -->
 <nav class="navbar navbar-default navbar-static-top">
-        <div class="navbar-header">
-            <a ui-sref="/"> <img class="img-thumbnail" src="images/logo-small.png" alt=""></a>
-            </div>
+    <div class="navbar-header">
+        <a ui-sref="home"> <img class="img-thumbnail" src="images/logo-small.png" alt=""></a>
+        <p>Route For Me</p>
+    </div>
 
 </nav>
 
-<main class="container-fluid">
+<body class="container-fluid">
 
 
     <ui-view>
 
     </ui-view>
 
-    <footer>some junk</footer>
-</main>
+    <footer class="footer">some junk</footer>
+</body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/lodash/4.6.1/lodash.js"></script>
 
 <script src="app.js"></script>
 <script src="routes/home/homeController.js"></script>
+<script src="routes/trail/trailController.js"></script>
+<script src="routes/nothing/nothingController.js"></script>
+
 <script src="js/service.js"></script>
 
 

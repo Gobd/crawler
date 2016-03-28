@@ -1,10 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<section class="intro">
+    <div class="jumbotron">
+        <p>Check it out! Here's what we found.</p>
+    </div>
+</section>
+<section class="jumbotron">
+    <div class="trail">
+        <p>Trail name: {{trail.name}}</p>
+        <p>Length: {{trail.length}}</p>
+        <p>Difficulty: {{trail.difficulty}}</p>
+        <!--<p>Description: {{trail.desc}}</p>-->
+        <p>Rating: {{trail.rating}}</p>
+        <p>Travel distance: {{distance}}</p>
+    </div>
+    <div ng-if="more">
+        <div>
+            <p>Don't like that one?</p>
+            <button class="btn" ng-click="tryAgain()">Try again</button>
+        </div>
+        <p>Or view list of trails</p>
+        <button class="btn" data-toggle="collapse" data-target="#expandTrails">All the trails</button>
+        <div id="expandTrails" class="collapse">
+            <div ng-repeat="trailFromList in trails" >
+                <div class="trail">
+                    <p>Trail name: {{trailFromList.name}}</p>
+                    <p>Length: {{trailFromList.length}}</p>
+                    <p>Difficulty: {{trailFromList.difficulty}}</p>
+                    <!--<p>Description: {{trailFromList.description}}</p>-->
+                    <p>Rating: {{trailFromList.rating}}</p>
+                    <p>Travel distance: {{distance}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="!more">
+        <p>Looks like this is it.</p>
+        <p>Try again with different params?</p>
+        <button class="btn" ui-sref="home">Go!</button>
+    </div>
+</section>
