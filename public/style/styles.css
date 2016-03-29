@@ -9,11 +9,46 @@ html {
 body {
     font-family: Verdana, sans-serif;
 }
+p{
+    text-align: left !important;
+
+}
+.header > *{
+    display: inline;
+    height:200px;
+}
+.brand{
+    font-size: large;
+}
+.background{
+    background: url("../images/background.png") no-repeat top center fixed;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
 
 .trail{
     border:2px cornflowerblue solid;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    /*padding:20px;*/
 }
 
 .narrow > div{
     width:50%;
 }
+
+.footer{
+    background: #EEE;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    padding: 20px !important;
+}
+
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:pink; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}

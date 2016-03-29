@@ -1,16 +1,19 @@
 <section class="intro">
-    <div class="jumbotron">
-        <p>Check it out! Here's what we found.</p>
-    </div>
 </section>
 <section class="jumbotron">
+
+    <div class="intro">
+        <p>Check it out! Here's what we found.</p>
+    </div>
     <div class="trail">
-        <p>Trail name: {{trail.name}}</p>
-        <p>Length: {{trail.length}}</p>
-        <p>Difficulty: {{trail.difficulty}}</p>
-        <!--<p>Description: {{trail.desc}}</p>-->
-        <p>Rating: {{trail.rating}}</p>
-        <p>Travel distance: {{distance}}</p>
+        <p>Trail name: <a href="{{trail.url}}" target="_blank">{{trail.name}}</a><br>
+            Length: {{trail.length}}<br>
+            Difficulty: {{trail.difficulty}}<br>
+            Rating: {{trail.rating}}
+        </p>
+        <br>
+        <p>All this info is taken from <a href="http://www.mtbproject.com/">Mtbproject</a>. Check them out.</p>
+
     </div>
     <div ng-if="more">
         <div>
@@ -20,14 +23,13 @@
         <p>Or view list of trails</p>
         <button class="btn" data-toggle="collapse" data-target="#expandTrails">All the trails</button>
         <div id="expandTrails" class="collapse">
-            <div ng-repeat="trailFromList in trails" >
+            <div ng-repeat="trailFromList in trails">
                 <div class="trail">
-                    <p>Trail name: {{trailFromList.name}}</p>
-                    <p>Length: {{trailFromList.length}}</p>
-                    <p>Difficulty: {{trailFromList.difficulty}}</p>
-                    <!--<p>Description: {{trailFromList.description}}</p>-->
-                    <p>Rating: {{trailFromList.rating}}</p>
-                    <p>Travel distance: {{distance}}</p>
+                    <p>Trail name: <a href="{{trailFromList.url}}" target="_blank">{{trailFromList.name}}</a><br>
+                        Length: {{trailFromList.length}}<br>
+                        Difficulty: {{trailFromList.difficulty}}<br>
+                        Rating: {{trailFromList.rating}}
+                    </p>
                 </div>
             </div>
         </div>

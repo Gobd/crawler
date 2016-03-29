@@ -12,25 +12,24 @@
 
     <title>Route for Me</title>
 </head>
-<body>
+<body class="background container">
 <!-- Static navbar -->
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="navbar-header">
-        <a ui-sref="home"> <img class="img-thumbnail" src="images/logo-small.png" alt=""></a>
-        <p>Route For Me</p>
-    </div>
+<nav class="navbar-default navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a ui-sref="home"> <img class="img-thumbnail" src="images/logo-small.png" alt=""></a>
+        </div>
 
+        <div class="nav navbar-right brand">
+            <h1>Route For Me</h1>
+        </div>
+    </div>
 </nav>
 
-<body class="container-fluid">
+<ui-view>
+</ui-view>
 
-
-    <ui-view>
-
-    </ui-view>
-
-    <footer class="footer">some junk</footer>
-</body>
+<footer class="footer">I made this because I was tired of riding <a href="http://www.mtbproject.com/trail/5226134/rush">Corner Canyon</a> every weekend</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
@@ -42,9 +41,7 @@
 <script src="routes/home/homeController.js"></script>
 <script src="routes/trail/trailController.js"></script>
 <script src="routes/nothing/nothingController.js"></script>
-
 <script src="js/service.js"></script>
-
 
 </body>
 </html>

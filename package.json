@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "cheerio": "^0.20.0",
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",

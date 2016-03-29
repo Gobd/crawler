@@ -4033,7 +4033,7 @@ var request = require('request');
 // });
 
 
-var config = require('../config');
+var config = require('../../config');
 var GoogleMapsAPI = require("googlemaps");
 var _ = require("lodash");
 var publicConfig = {
