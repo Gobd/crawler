@@ -5,12 +5,15 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "bottleneck": "^1.11.0",
     "cheerio": "^0.20.0",
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "google-maps": "^3.2.1",
-    "mongoose": "^4.4.8"
+    "mongoose": "^4.4.8",
+    "request": "latest",
+    "url-parse": "latest"
   },
   "devDependencies": {},
   "scripts": {
