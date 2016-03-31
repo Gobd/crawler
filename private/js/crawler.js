@@ -22,7 +22,7 @@ const searchTerms = [
     'class="imperial"',
     "Overview"
 ];
-const maxPages = 100;
+const maxPages = 10000;
 const fileExts = [
     ".asx",     // Windows video
     ".bmp",     // bitmap image
@@ -57,7 +57,7 @@ const fileExts = [
     ".m4b"	    // MP4 video or audio
 ];
 const writeStream = fs.createWriteStream("../data/crawledData.json", {encoding: 'utf8'});
-const limiter = new bottleneck(3,500);
+const limiter = new bottleneck(2,500);
 
 //define some variables for later use
 let pagesVisited = {};
@@ -85,7 +85,7 @@ let crawl = () => {
         writeStream.end();
     } else {
 
-        if (numPagesVisited % 1000) {
+        if (numPagesVisited % 100 === 0) {
             console.log(numPagesVisited);
         }
         let nextPage = pagesToVisit.pop();
@@ -137,7 +137,6 @@ let searchForTerms = ($, terms) => {
     ret.location = {coordinates: []};
     ret.url = url.href;
     let temp;
-    console.log('made it');
 
     //iterates through html page
     for (var i = 0; i < text.length; i++) {
@@ -208,7 +207,6 @@ let searchForTerms = ($, terms) => {
                 }
                 writeStream.write(JSON.stringify(ret), (err)=> {
                     err ? console.log(err) : {};
-                    console.log('made it here too')
                 });
                 break;
             }
@@ -222,7 +220,6 @@ let searchForTerms = ($, terms) => {
 //collects links on pages visited that are from the same domain
 let collectInternalLinks = ($) => {
     let relativeLinks = $("a[href^='/']");
-    // console.log("Found " + relativeLinks.length + " relative links on page");
     relativeLinks.each(function () {
         //if the link is one that we care about, add it to the list to visit
         if (!/\/photo.*/.test($(this).attr('href')) ||
@@ -235,7 +232,8 @@ let collectInternalLinks = ($) => {
             !/\/ajax.*/.test($(this).attr('href')) ||
             !/\/edit.*/.test($(this).attr('href')) ||
             !/\/earth.*/.test($(this).attr('href')) ||
-            !$(this).attr('href').match(/(\..*)/)[1] in fileExts
+            !$(this).attr('href').match(/(\..*)/)[1] in fileExts ||
+            (baseUrl + $(this).attr('href')) in pagesVisited
         ) {
             pagesToVisit.push(baseUrl + $(this).attr('href'));
         }
