@@ -22,7 +22,7 @@ const searchTerms = [
     'class="imperial"',
     "Overview"
 ];
-const maxPages = 10000;
+const maxPages = 100;
 const fileExts = [
     ".asx",     // Windows video
     ".bmp",     // bitmap image
@@ -56,8 +56,12 @@ const fileExts = [
     ".mp4",     // MP4 video or audio
     ".m4b"	    // MP4 video or audio
 ];
-const writeStream = fs.createWriteStream("../data/crawledData.json", {encoding: 'utf8'});
-const limiter = new bottleneck(2,500);
+const dataStream = fs.createWriteStream("../data/crawledData.json", {encoding: 'utf8'});
+const logStream = fs.createWriteStream('../data/log.txt', {encoding: 'utf8'});
+const visitStream = fs.createWriteStream('../data/visitedLinks.txt', {encoding: 'utf8'});
+const queueStream = fs.createWriteStream('../data/queuedLinks.txt', {encoding: 'utf8'});
+const readQueue = fs.createReadStream('../data/queuedLinks.txt');
+const limiter = new bottleneck(1, 500);
 
 //define some variables for later use
 let pagesVisited = {};
@@ -66,29 +70,41 @@ let pagesToVisit = [];
 let url = new URL(startUrl);
 let baseUrl = url.protocol + "//" + url.hostname;
 let commaFlag = false;
+let queueFlag = false;
+let visitFlag = false;
 
 //do some things before start
+//todo  add read of visit and queue into memory
 pagesToVisit.push(startUrl);
 pagesToVisit.push("http://www.mtbproject.com/directory/all");
-writeStream.write("[");
+pagesToVisit.push("http://www.mtbproject.com/directory/8010492/salt-lake-city-and-wasatch-front");
+dataStream.write("[");
+visitStream.write("[");
+queueStream.write("[");
 
 
 //crawler that makes sure we only visit unvisited pages
 let crawl = () => {
     //we've visited max number of pages or visited all in queue
     if (numPagesVisited >= maxPages || pagesToVisit.length === 0) {
-        writeStream.write("]");
-        writeStream.on('finish', function () {
+        dataStream.write("]");
+        visitStream.write("]");
+        queueStream.write("]");
+        dataStream.on('finish', function () {
             console.log('file has been written');
             console.log(numPagesVisited);
         });
-        writeStream.end();
+        dataStream.end();
     } else {
 
         if (numPagesVisited % 100 === 0) {
             console.log(numPagesVisited);
         }
         let nextPage = pagesToVisit.pop();
+
+        //todo add feature that removes things from queued file
+
+
         if (nextPage in pagesVisited) {
             // We've already visited this page, so repeat the crawl
             crawl();
@@ -105,37 +121,50 @@ let visitPage = (url, callback) => {
 
     // Add page to visitedpages
     pagesVisited[url] = true;
+    if (!visitFlag) {
+        visitFlag = true;
+    } else {
+        visitStream.write(",", (err)=> {
+            err ? console.log(err) : {};
+        })
+    }
+    visitStream.write("\'"+url+"\'");
     numPagesVisited++;
 
     // Make the request
     request(url, (error, response, body) => {
         // Check status code (200 is HTTP OK)
-        if (response.statusCode !== 200) {
-            callback();
-            return;
-        }
-        // Parse the document body
-        let $ = cheerio.load(body);
+        if (response.statusCode) {
+            logStream.write(url + " : passed, "+response.statusCode + "\n");
+            if (response.statusCode !== 200) {
+                callback();
+                return;
+            }
+            // Parse the document body
+            let $ = cheerio.load(body);
 
-        //ensures it only searches trail pages
-        if (/(http:\/\/www.mtbproject.com\/trail\/).*/.test(url)) {
-            searchForTerms($, searchTerms);
-            callback();
-        } else {
-            collectInternalLinks($);
-            callback();
+            //ensures it only searches trail pages
+            if (/(http:\/\/www.mtbproject.com\/trail\/).*/.test(url)) {
+                searchForTerms(url, $, searchTerms);
+                callback();
+            } else {
+                collectInternalLinks($);
+                callback();
+            }
+        } else{
+            logStream.write(url + " : failed, "+error + "\n");
         }
     });
 };
 
 //searches html for terms we're interested in and writes them to file
-let searchForTerms = ($, terms) => {
+let searchForTerms = (url, $, terms) => {
     let text = $('html').html();
     let termCount = 0;
     let len = terms[0].length;
     let ret = {};
     ret.location = {coordinates: []};
-    ret.url = url.href;
+    ret.url = url;
     let temp;
 
     //iterates through html page
@@ -165,8 +194,8 @@ let searchForTerms = ($, terms) => {
                     //long,lat
                     temp = text.slice(i + len, i + len + 200);
                     temp = temp.match(/=([^"]*)"/)[1];
-                    ret.location.coordinates[0] = temp.match(/(.*(?=,))/)[1];
-                    ret.location.coordinates[1] = temp.match(/,([^,]+)/)[1];
+                    ret.location.coordinates[1] = temp.match(/(.*(?=,))/)[1];
+                    ret.location.coordinates[0] = temp.match(/,([^,]+)/)[1];
                     break;
                 //gpx
                 case 4:
@@ -201,11 +230,11 @@ let searchForTerms = ($, terms) => {
                 if (!commaFlag) {
                     commaFlag = true;
                 } else {
-                    writeStream.write(",", (err)=> {
+                    dataStream.write(",", (err)=> {
                         err ? console.log(err) : {};
                     })
                 }
-                writeStream.write(JSON.stringify(ret), (err)=> {
+                dataStream.write(JSON.stringify(ret), (err)=> {
                     err ? console.log(err) : {};
                 });
                 break;
@@ -222,19 +251,18 @@ let collectInternalLinks = ($) => {
     let relativeLinks = $("a[href^='/']");
     relativeLinks.each(function () {
         //if the link is one that we care about, add it to the list to visit
-        if (!/\/photo.*/.test($(this).attr('href')) ||
-            !/\/forum.*/.test($(this).attr('href')) ||
-            !/\/faq.*/.test($(this).attr('href')) ||
-            !/\/blog.*/.test($(this).attr('href')) ||
-            !/\/user.*/.test($(this).attr('href')) ||
-            !/\/club.*/.test($(this).attr('href')) ||
-            !/\/admin.*/.test($(this).attr('href')) ||
-            !/\/ajax.*/.test($(this).attr('href')) ||
-            !/\/edit.*/.test($(this).attr('href')) ||
-            !/\/earth.*/.test($(this).attr('href')) ||
+        if (!/\/photo.*/.test($(this).attr('href')) || !/\/forum.*/.test($(this).attr('href')) || !/\/faq.*/.test($(this).attr('href')) || !/\/blog.*/.test($(this).attr('href')) || !/\/user.*/.test($(this).attr('href')) || !/\/club.*/.test($(this).attr('href')) || !/\/admin.*/.test($(this).attr('href')) || !/\/ajax.*/.test($(this).attr('href')) || !/\/edit.*/.test($(this).attr('href')) || !/\/earth.*/.test($(this).attr('href')) ||
             !$(this).attr('href').match(/(\..*)/)[1] in fileExts ||
             (baseUrl + $(this).attr('href')) in pagesVisited
         ) {
+            if (!queueFlag) {
+                queueFlag = true;
+            } else {
+                queueStream.write(",", (err)=> {
+                    err ? console.log(err) : {};
+                })
+            }
+            queueStream.write("\'"+baseUrl + $(this).attr('href')+"\'");
             pagesToVisit.push(baseUrl + $(this).attr('href'));
         }
     });

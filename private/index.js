@@ -4,20 +4,20 @@
 "use strict";
 
 //setup external packages
-var express = require('express');
-var bodyParser = require('body-parser');
-var session = require('express-session');
-var mongoose = require('mongoose');
-var cors = require('cors');
+const express = require('express');
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const mongoose = require('mongoose');
+const cors = require('cors');
 
 
 //setup internal packages
-var config = require('./../config');
-var mainCtrl = require('./Controllers/mainCtrl');
+const config = require('./../config');
+const mainCtrl = require('./Controllers/mainCtrl');
 
 //create app and specify port
-var app = express();
-var port = 8080;
+const app = express();
+const port = 8080;
 
 //setup session, listening and parsing
 app.use(session({

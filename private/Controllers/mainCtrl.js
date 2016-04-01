@@ -3,48 +3,54 @@
  */
 "use strict";
 
+//setup required packages
+const Trail = require('../Schemas/trail');
+const config = require('../../config');
+const GoogleMapsAPI = require("googlemaps");
 
-var Trail = require('../Schemas/trail');
-var config = require('../../config');
-var GoogleMapsAPI = require("googlemaps");
-
-var publicConfig = {
+//setup googleMaps api
+const publicConfig = {
     key: config.googleAPIKey,
     stagger_time: 1000, // for elevationPath
     encode_polylines: false,
     secure: true // use https
 };
-var gmAPI = new GoogleMapsAPI(publicConfig);
+const gmAPI = new GoogleMapsAPI(publicConfig);
 
 module.exports = {
 
     //posts trails to db
-    postTrails: function (request, response) {
-        var errs = [];
-        var ss = [];
+    postTrails: (request, response) => {
+        let errs = [];
+        let ss = [];
 
         if (!request.body) {
             response.status(500).json("some junk broke");
             return;
         }
 
-        Trail.create(request.body, function (err, s) {
+        Trail.create(request.body, (err, s) => {
             err ? errs.push(errs) : ss.push(s);
         });
         return errs.length > 0 ? response.status(500).json(errs) : response.status(200).json(ss);
 
     },
     //gets trails based on form input
-    getTrail: function (request, response) {
+    getTrail: (request, response) => {
 
         //gets zipcode to translate to lat/long
-        console.log(request.body);
-        if (request.body.zip) {
+        if (request.body) {
             //TODO check data for validity
             let zip = {"address": request.body.zip};
+            if(request.body.length === "A lot"){
+                request.body.length = 100;
+            }
+            if(request.body.distance === "Really far"){
+                request.body.distance = 300;
+            }
 
             //get user coordinates
-            gmAPI.geocode(zip, function (err, result) {
+            gmAPI.geocode(zip, (err, result) => {
 
                 //if success
                 if (!err) {
@@ -60,14 +66,11 @@ module.exports = {
                                     type: "Point",
                                     coordinates: coords
                                 },
-                                $maxDistance: parseInt(request.body.distance)*1609.34
-                            }
-                        }
-                        ,
-                        difficulty: request.body.difficulty,
-                        length: {$lt: request.body.length}
-                    }, function (err, s) {
-                        console.log('butts');
+                                $maxDistance: parseInt(request.body.distance) * 1609.34
+                            }}
+                        // difficulty: new RegExp('\w*(' + request.body.difficulty + ')\w*', "ig"),
+                        // length: {$lt: request.body.length}
+                    }, (err, s) => {
                         console.log(s);
                         return err || s.length == 0 ? response.status(500).json(err) : response.status(200).json(s);
                     });
@@ -79,7 +82,6 @@ module.exports = {
         } else {
             response.status(500).json("something messed up, sorry")
         }
-
-
     }
 };
+

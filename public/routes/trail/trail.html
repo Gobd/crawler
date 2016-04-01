@@ -1,42 +1,57 @@
-<section class="intro">
-</section>
-<section class="jumbotron">
+<md-content layout="column" layout-padding class="md-hue-1" >
+    <p class="removePadding">Check it out! Here's what we found.</p>
 
-    <div class="intro">
-        <p>Check it out! Here's what we found.</p>
-    </div>
-    <div class="trail">
-        <p>Trail name: <a href="{{trail.url}}" target="_blank">{{trail.name}}</a><br>
-            Length: {{trail.length}}<br>
-            Difficulty: {{trail.difficulty}}<br>
-            Rating: {{trail.rating}}
-        </p>
-        <br>
-        <p>All this info is taken from <a href="http://www.mtbproject.com/">Mtbproject</a>. Check them out.</p>
+    <md-card>
+        <md-card-header>
+            <md-card-header-text>
+                <span class="md-title">A trail!</span>
+            </md-card-header-text>
+        </md-card-header>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline"><a href="{{trail.url}}" target="_blank">{{trail.name}}</a></span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>
+                Length: {{trail.length}}<br>
+                Difficulty: {{trail.difficulty}}<br>
+                Rating: {{trail.rating}}
+            </p>
+            <p class="removePadding">All this info is taken from <a href="http://www.mtbproject.com/">Mtbproject</a>. Check them
+                out.</p>
+        </md-card-content>
+    </md-card>
 
-    </div>
-    <div ng-if="more">
-        <div>
+    <div layout="column" ng-if="more">
             <p>Don't like that one?</p>
-            <button class="btn" ng-click="tryAgain()">Try again</button>
-        </div>
+            <md-button class="md-raised" ng-click="tryAgain()">Try again!</md-button>
         <p>Or view list of trails</p>
-        <button class="btn" data-toggle="collapse" data-target="#expandTrails">All the trails</button>
-        <div id="expandTrails" class="collapse">
-            <div ng-repeat="trailFromList in trails">
-                <div class="trail">
-                    <p>Trail name: <a href="{{trailFromList.url}}" target="_blank">{{trailFromList.name}}</a><br>
-                        Length: {{trailFromList.length}}<br>
-                        Difficulty: {{trailFromList.difficulty}}<br>
-                        Rating: {{trailFromList.rating}}
-                    </p>
-                </div>
-            </div>
-        </div>
+        <md-button class="md-raised" flex ng-click="show=!show">All the trails!</md-button>
+
+        <md-card ng-show="show" ng-repeat="trailFromList in trails">
+            <md-card-header>
+                <md-card-header-text>
+                    <span class="md-title">A trail!</span>
+                </md-card-header-text>
+            </md-card-header>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline"><a href="{{trailFromList.url}}" target="_blank">{{trailFromList.name}}</a></span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>
+                    Length: {{trailFromList.length}}<br>
+                    Difficulty: {{trailFromList.difficulty}}<br>
+                    Rating: {{trailFromList.rating}}
+                </p>
+            </md-card-content>
+        </md-card>
     </div>
-    <div ng-if="!more">
+    <div layout="column" ng-if="!more">
         <p>Looks like this is it.</p>
         <p>Try again with different params?</p>
-        <button class="btn" ui-sref="home">Go!</button>
+        <md-button class="md-raised" ui-sref="home" flex>Go!</md-button>
     </div>
-</section>
+</md-content>

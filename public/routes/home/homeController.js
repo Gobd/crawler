@@ -2,35 +2,12 @@
  * Created by Tom on 2/19/2016.
  */
 
-angular.module('myApp').controller('homeControl', function ($scope, service) {
+angular.module('myApp').controller('homeControl', ($scope, service) => {
 
     //menu options
-    $scope.diffOptions = {
-        availableOptions: [
-            {id: "Beginner", name: "Beginner"},
-            {id: "Intermediate", name: "Intermediate"},
-            {id: "Difficult", name: "Difficult"}
-        ],
-        selectedOption: {id: "Beginner", name: "Beginner"}
-    };
-    $scope.lenOptions = {
-        availableOptions: [
-            {id: 5, name: "5"},
-            {id: 10, name: "10"},
-            {id: 20, name: "20"},
-            {id: 100, name: "A lot"}
-        ],
-        selectedOption: {id: 5, name: "5"}
-    };
-    $scope.distOptions = {
-        availableOptions: [
-            {id: 10, name: "10"},
-            {id: 20, name: "20"},
-            {id: 50, name: "50"},
-            {id: 300, name: "Really far"}
-        ],
-        selectedOption: {id: 10, name: "10"}
-    };
+    $scope.diffOptions = ["Beginner", "Intermediate", "Difficult"];
+    $scope.lenOptions = ["5", "10", "20", "A lot"];
+    $scope.distOptions = ["10", "20", "50", "Really far"];
 
     //TODO get update working with minlength so that form is only valid once full zip is entered
     //var oldValue = "";
@@ -48,21 +25,21 @@ angular.module('myApp').controller('homeControl', function ($scope, service) {
     //};
 
     //validate
-    $scope.$watch('zip', function (newValue, oldValue) {
+    $scope.$watch('zip', (newValue, oldValue) => {
         if (newValue) {
-            var isNum = /^\d+$/.test(newValue);
+            let isNum = /^\d+$/.test(newValue);
             if (newValue.length > 5 || !isNum) {
-                $scope.zip =  oldValue;
+                $scope.zip = oldValue;
             }
         }
     });
 
-    var request = {};
-    $scope.submitForm = function () {
+    let request = {};
+    $scope.submitForm = () => {
         request.zip = $scope.zip;
-        request.difficulty = $scope.diffOptions.selectedOption.id;
-        request.length = $scope.lenOptions.selectedOption.id;
-        request.distance = $scope.distOptions.selectedOption.id;
+        request.difficulty = $scope.difficulty;
+        request.length = $scope.length;
+        request.distance = $scope.distance;
         service.postForm(request);
     };
 

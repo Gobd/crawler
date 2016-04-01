@@ -9,46 +9,62 @@ html {
 body {
     font-family: Verdana, sans-serif;
 }
-p{
-    text-align: left !important;
-
-}
-.header > *{
-    display: inline;
-    height:200px;
-}
-.brand{
-    font-size: large;
-}
 .background{
-    background: url("../images/background.png") no-repeat top center fixed;
+    background: url("../images/background.png") no-repeat left bottom;
     background-size: cover;
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
-.trail{
-    border:2px cornflowerblue solid;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    /*padding:20px;*/
+.header{
+    max-height:96px;
 }
-
-.narrow > div{
-    width:50%;
-}
-
 .footer{
-    background: #EEE;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
-    padding: 20px !important;
+    max-height:100px;
+}
+.footerText{
+    margin:0;
+}
+.name{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+.removePadding {
+    margin-top:0;
+    margin-bottom:0;
 }
 
+.zipcode{
+    margin-bottom:-10px;
+}
+.zipcodeText{
+    margin-left: 6px;
+}
+.container{}
 a:link    {color:green; background-color:transparent; text-decoration:none}
 a:visited {color:pink; background-color:transparent; text-decoration:none}
 a:hover   {color:red; background-color:transparent; text-decoration:underline}
 a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+
+@media (min-width: 100px) {
+    .container{
+        max-width:30rem !important;
+        align-items: center;
+        margin:auto;
+        overflow: scroll;
+        height: 100vh;
+        
+    }
+    .header{
+        max-width:30rem !important;
+        align-items: center;
+        margin:auto;
+    }
+    .footer{
+        max-width:30rem !important;
+        align-items: center;
+        margin:auto;
+    }
+}

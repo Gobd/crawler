@@ -3,7 +3,7 @@
  */
 "use strict";
 
-angular.module('myApp').controller('trailControl', function ($scope, service, _) {
+angular.module('myApp').controller('trailControl', ($scope, service, _) => {
 
     $scope.more = false;
     $scope.info = false;
