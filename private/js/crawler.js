@@ -69,7 +69,6 @@ let pagesToVisit = [];
 let url = new URL(startUrl);
 let baseUrl = url.protocol + "//" + url.hostname;
 let commaFlag = false;
-let queueFlag = false;
 let visitFlag = false;
 const emptyCallback = (err, fd) => {
 };
@@ -109,6 +108,7 @@ pagesToVisit.push("http://www.mtbproject.com/directory/8010492/salt-lake-city-an
 //visitStream.write("[");
 //queueStream.write("[");
 
+//todo figure out why some entries end up with no commas or double commas
 
 //crawler that makes sure we only visit unvisited pages
 let crawl = () => {
@@ -126,9 +126,6 @@ let crawl = () => {
             console.log(numPagesVisited);
         }
         let nextPage = pagesToVisit.pop();
-
-        //todo add feature that removes things from queued file
-
 
         if (nextPage in pagesVisited) {
             // We've already visited this page, so repeat the crawl
