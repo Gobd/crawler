@@ -56,12 +56,11 @@ const fileExts = [
     ".mp4",     // MP4 video or audio
     ".m4b"	    // MP4 video or audio
 ];
-const dataStream = fs.createWriteStream("../data/crawledData.json", {encoding: 'utf8'});
-const logStream = fs.createWriteStream('../data/log.txt', {encoding: 'utf8'});
-const visitStream = fs.createWriteStream('../data/visitedLinks.txt', {encoding: 'utf8'});
-const queueStream = fs.createWriteStream('../data/queuedLinks.txt', {encoding: 'utf8'});
-const readQueue = fs.createReadStream('../data/queuedLinks.txt');
-const limiter = new bottleneck(1, 500);
+//const dataStream = fs.createWriteStream("../data/crawledData.json", {encoding: 'utf8'});
+//const logStream = fs.createWriteStream('../data/log.txt', {encoding: 'utf8'});
+//const visitStream = fs.createWriteStream('../data/visitedLinks.txt', {encoding: 'utf8'});
+//const readQueue = fs.createReadStream('../data/queuedLinks.txt');
+const limiter = new bottleneck(2, 500);
 
 //define some variables for later use
 let pagesVisited = {};
@@ -72,29 +71,55 @@ let baseUrl = url.protocol + "//" + url.hostname;
 let commaFlag = false;
 let queueFlag = false;
 let visitFlag = false;
-
+const emptyCallback = (err, fd) => {
+};
+fs.open("../data/crawledData.json", "a+", emptyCallback);
+fs.open("../data/log.txt", "a+", emptyCallback);
+fs.open("../data/visitedLinks.txt", "a+", emptyCallback);
 //do some things before start
 //todo  add read of visit and queue into memory
+
+let stats = fs.statSync("../data/crawledData.json", emptyCallback).size;
+if (stats != 0) {
+    commaFlag = true;
+}
+stats = fs.statSync("../data/visitedLinks.txt", emptyCallback).size;
+if (stats != 0) {
+    let temp = fs.readFileSync("../data/visitedLinks.txt", {"encoding": "utf8"}, emptyCallback).split(",'");
+    for (let i = 0; i < temp.length; i++) {
+        pagesVisited[temp[i]]=true;
+    }
+    visitFlag = true;
+}
+stats = fs.statSync("../data/queuedLinks.txt", emptyCallback).size;
+if (stats != 0) {
+    let temp = fs.readFileSync("../data/queuedLinks.txt", {"encoding": "utf8"}, emptyCallback).split(',');
+    for (let i = 0; i < temp.length; i++) {
+        pagesToVisit.push(temp[i])
+    }
+}
+
+const queueStream = fs.createWriteStream('../data/queuedLinks.txt', {encoding: 'utf8'});
+
+
 pagesToVisit.push(startUrl);
 pagesToVisit.push("http://www.mtbproject.com/directory/all");
 pagesToVisit.push("http://www.mtbproject.com/directory/8010492/salt-lake-city-and-wasatch-front");
-dataStream.write("[");
-visitStream.write("[");
-queueStream.write("[");
+//dataStream.write("[");
+//visitStream.write("[");
+//queueStream.write("[");
 
 
 //crawler that makes sure we only visit unvisited pages
 let crawl = () => {
     //we've visited max number of pages or visited all in queue
     if (numPagesVisited >= maxPages || pagesToVisit.length === 0) {
-        dataStream.write("]");
-        visitStream.write("]");
-        queueStream.write("]");
-        dataStream.on('finish', function () {
-            console.log('file has been written');
-            console.log(numPagesVisited);
+
+        queueStream.write(JSON.stringify(pagesToVisit));
+        queueStream.on('finish', ()=> {
+            console.log('queue has been written')
         });
-        dataStream.end();
+        queueStream.end();
     } else {
 
         if (numPagesVisited % 100 === 0) {
@@ -124,18 +149,18 @@ let visitPage = (url, callback) => {
     if (!visitFlag) {
         visitFlag = true;
     } else {
-        visitStream.write(",", (err)=> {
+        fs.appendFile("../data/visitedLinks.txt", ",", (err)=> {
             err ? console.log(err) : {};
         })
     }
-    visitStream.write("\'"+url+"\'");
+    fs.appendFile("../data/visitedLinks.txt", "\'" + url + "\'");
     numPagesVisited++;
 
     // Make the request
     request(url, (error, response, body) => {
         // Check status code (200 is HTTP OK)
         if (response.statusCode) {
-            logStream.write(url + " : passed, "+response.statusCode + "\n");
+            fs.appendFile("../data/log.txt", url + " : passed, " + response.statusCode + "\n");
             if (response.statusCode !== 200) {
                 callback();
                 return;
@@ -152,7 +177,7 @@ let visitPage = (url, callback) => {
                 callback();
             }
         } else{
-            logStream.write(url + " : failed, "+error + "\n");
+            fs.appendFile("../data/log.txt", url + " : failed, " + error + "\n");
         }
     });
 };
@@ -230,11 +255,11 @@ let searchForTerms = (url, $, terms) => {
                 if (!commaFlag) {
                     commaFlag = true;
                 } else {
-                    dataStream.write(",", (err)=> {
+                    fs.appendFile("../data/crawledData.json", ",", (err)=> {
                         err ? console.log(err) : {};
                     })
                 }
-                dataStream.write(JSON.stringify(ret), (err)=> {
+                fs.appendFile("../data/crawledData.json", JSON.stringify(ret), (err)=> {
                     err ? console.log(err) : {};
                 });
                 break;
@@ -249,20 +274,21 @@ let searchForTerms = (url, $, terms) => {
 //collects links on pages visited that are from the same domain
 let collectInternalLinks = ($) => {
     let relativeLinks = $("a[href^='/']");
+    //todo converting .each anon callback to a big arrow function breaks $ for some reason
     relativeLinks.each(function () {
         //if the link is one that we care about, add it to the list to visit
         if (!/\/photo.*/.test($(this).attr('href')) || !/\/forum.*/.test($(this).attr('href')) || !/\/faq.*/.test($(this).attr('href')) || !/\/blog.*/.test($(this).attr('href')) || !/\/user.*/.test($(this).attr('href')) || !/\/club.*/.test($(this).attr('href')) || !/\/admin.*/.test($(this).attr('href')) || !/\/ajax.*/.test($(this).attr('href')) || !/\/edit.*/.test($(this).attr('href')) || !/\/earth.*/.test($(this).attr('href')) ||
             !$(this).attr('href').match(/(\..*)/)[1] in fileExts ||
             (baseUrl + $(this).attr('href')) in pagesVisited
         ) {
-            if (!queueFlag) {
-                queueFlag = true;
-            } else {
-                queueStream.write(",", (err)=> {
-                    err ? console.log(err) : {};
-                })
-            }
-            queueStream.write("\'"+baseUrl + $(this).attr('href')+"\'");
+            //if (!queueFlag) {
+            //    queueFlag = true;
+            //} else {
+            //    queueStream.write(",", (err)=> {
+            //        err ? console.log(err) : {};
+            //    })
+            //}
+            //queueStream.write("\'"+baseUrl + $(this).attr('href')+"\'");
             pagesToVisit.push(baseUrl + $(this).attr('href'));
         }
     });
