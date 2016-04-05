@@ -33,7 +33,7 @@ app.listen(port);
 
 //open connection to mongo
 mongoose.set("debug", true);
-mongoose.connect("mongodb://localhost/trails");
+mongoose.connect("mongodb://127.0.0.1:27017/trails");
 mongoose.connection.once("open", function () {
     console.log("connected to mongodb")
 });
