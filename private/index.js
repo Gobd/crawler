@@ -17,7 +17,7 @@ const mainCtrl = require('./Controllers/mainCtrl');
 
 //create app and specify port
 const app = express();
-const port = 8080;
+const port = 80;
 
 //setup session, listening and parsing
 app.use(session({

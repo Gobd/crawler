@@ -8,12 +8,14 @@ let crawler = require("./crawler.js");
 //
 // const emptyCallback = (err, fd) => {
 // };
-// fs.open("../data/crawledData.json", "a+", emptyCallback);
+// fs.open("../data/data.json", "a+", emptyCallback);
 // fs.open("../data/log.txt", "a+", emptyCallback);
 // fs.open("../data/visitedLinks.txt", "a+", emptyCallback);
 
-for (var i = 0; i < 100; i++) {
-    crawler();
+crawler.getpageslist();
+
+for (var i = 0; i < 100; i++){
+crawler();
 }
 
 // crawl((data, err) => {

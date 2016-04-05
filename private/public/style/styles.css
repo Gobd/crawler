@@ -10,11 +10,12 @@ body {
     font-family: Verdana, sans-serif;
 }
 .background{
-    background: url("../images/background.png") no-repeat left bottom;
+    background: url("../images/background.png")  no-repeat left bottom fixed;
     background-size: cover;
-    width: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: auto;
 }
 
 .header{
@@ -53,9 +54,6 @@ a:active  {color:yellow; background-color:transparent; text-decoration:underline
         max-width:30rem !important;
         align-items: center;
         margin:auto;
-        overflow: scroll;
-        height: 100vh;
-        
     }
     .header{
         max-width:30rem !important;

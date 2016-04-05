@@ -9,7 +9,7 @@ angular.module("myApp").service("service", function ($http, $q, $state) {
     let count = 0;
 
     this.postForm = (request) => {
-        $http.post("http://localhost:8080/", request)
+        $http.post("http://localhost:80/", request)
             .success(function (result) {
                 console.log(result);
                 trails = result;
