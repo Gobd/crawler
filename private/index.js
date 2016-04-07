@@ -38,5 +38,5 @@ mongoose.connection.once("open", function () {
     console.log("connected to mongodb")
 });
 
-app.post('/trails', mainCtrl.postTrails);
+// app.post('/trails', mainCtrl.postTrails);
 app.post('/', mainCtrl.getTrail);

@@ -19,22 +19,6 @@ const gmAPI = new GoogleMapsAPI(publicConfig);
 
 module.exports = {
 
-    //posts trails to db
-    postTrails: (request, response) => {
-        let errs = [];
-        let ss = [];
-
-        if (!request.body) {
-            response.status(500).json("some junk broke");
-            return;
-        }
-
-        Trail.create(request.body, (err, s) => {
-            err ? errs.push(errs) : ss.push(s);
-        });
-        return errs.length > 0 ? response.status(500).json(errs) : response.status(200).json(ss);
-
-    },
     //gets trails based on form input
     getTrail: (request, response) => {
 

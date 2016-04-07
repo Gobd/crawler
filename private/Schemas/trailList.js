@@ -13,4 +13,4 @@ var trailList = new Schema({
     }]
 });
 
-// module.exports = Mongoose.model("Trails", trailList);
+module.exports = Mongoose.model("Trails", trailList);

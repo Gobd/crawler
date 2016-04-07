@@ -50,4 +50,4 @@ var trailSchema = new Schema({
     }
 });
 trailSchema.index({location: "2dsphere"});
-module.exports = mongoose.model("Trails", trailSchema);
+module.exports = mongoose.model("Trail", trailSchema);

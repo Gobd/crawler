@@ -12,6 +12,7 @@
     "express-session": "^1.13.0",
     "googlemaps": "^1.4.0",
     "mongoose": "^4.4.8",
+    "q": "^1.4.1",
     "request": "latest",
     "url-parse": "latest"
   },
