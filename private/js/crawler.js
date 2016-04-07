@@ -13,15 +13,8 @@ const q = require('q');
 //define some option constants
 const startUrl = "http://www.mtbproject.com/featured/Rides";
 const searchTerms = [
-    'itemprop="itemreviewed"',
-    'itemprop="rating"',
-    "textSecondary",
-    'maps.google.com/?daddr',
-    'Getting There',
-    'class="imperial"',
-    "Overview"
 ];
-const maxPages = 10000;
+const maxPages = 10;
 const fileExts = [
     ".asx",     // Windows video
     ".bmp",     // bitmap image
@@ -73,7 +66,7 @@ let crawl = () => {
     //we've visited max number of pages or visited all in queue
     if (numPagesVisited >= maxPages || pagesToVisit.length === 0) {
         for (var i = 0; i < pagesToVisit.length; i++) {
-            dh.queue(pagesToVisit.unshift());
+            dh.queue(pagesToVisit.shift());
         }
         dh.close();
         return (console.log(`done`));
@@ -105,6 +98,7 @@ let visitPage = (url, callback) => {
 
     // Add page to visitedpages
     dh.visit(String(url));
+    pagesVisited.push(url);
     numPagesVisited++;
 
     // Make the request

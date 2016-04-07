@@ -58,8 +58,7 @@ module.exports = {
                 defer.resolve(ret);
                 console.log("removed");
             }
-        });
-        //todo remove records
+        }).limit(100);
         return defer.promise;
     },
     getVisit: () => {
@@ -70,7 +69,7 @@ module.exports = {
             } else {
                 defer.resolve(response);
             }
-        }).limit(100);
+        });
         return defer.promise;
     },
     close: () =>{
