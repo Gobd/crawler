@@ -1,6 +1,3 @@
-/**
- * Created by Tom on 2/19/2016.
- */
 "use strict";
 
 angular.module("myApp").service("service", function ($http, $q, $state) {

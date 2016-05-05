@@ -1,6 +1,3 @@
-/**
- * Created by Tom on 2/19/2016.
- */
 "use strict";
 
 angular.module("myApp", ["ui.router", "ngMaterial"]).constant('_', window._);
@@ -13,24 +10,24 @@ angular.module("myApp").config(($stateProvider, $urlRouterProvider) => {
 
         .state("home", {
             url: "/",
-            templateUrl: "routes/home/home.html",
+            templateUrl: "routes/home.html",
             controller: "homeControl"
         })
 
         .state("trail", {
             url: "/trail",
-            templateUrl: "routes/trail/trail.html",
+            templateUrl: "routes/trail.html",
             controller: "trailControl"
         })
 
         .state("nothing", {
             url: "/nothing",
-            templateUrl: "routes/nothing/nothing.html",
+            templateUrl: "routes/nothing.html",
             controller: "nothingControl"
         })
         .state("background",{
             url:"/background",
-            templateUrl:"routes/background/background.html"
+            templateUrl:"routes/background.html"
         })
 
 });

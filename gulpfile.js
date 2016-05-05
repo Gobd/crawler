@@ -12,16 +12,17 @@ const htmlMin = require(`gulp-htmlmin`);
 const uglyCss = require(`gulp-uglifycss`);
 const gutil = require(`gulp-util`);
 
+let env = `development`;
 gulp.task(`js`, () => {
-    return gulp.src(`./public/js/**/*.js`)
+    return gulp.src(`./public/**/*.js`)
         .pipe(annotate())
         .pipe(babel(
             {presets: [`es2015`]}
         ))
         .pipe(concat(`all.js`))
-        .pipe(process.env.NODE_ENV = `production` ? minify():gutil.noop())
+        .pipe(env === `production` ? minify():gutil.noop())
         .pipe(rename(`all.min.js`))
-        .pipe(process.env.NODE_ENV = `production` ? uglify():gutil.noop())
+        .pipe(env === `production` ? uglify():gutil.noop())
         .pipe(gulp.dest(`dist/js`));
 });
 
@@ -53,11 +54,12 @@ gulp.task(`images`, () => {
 });
 
 gulp.task(`deploy`, [`js`, `css`, `views`, `index`, `images`], (next) => {
-    process.env.NODE_ENV = `production`;
+    env = `production`;
     return next();
 });
 
 gulp.task(`dev`, [`js`, `css`, `views`, `index`, `images`], (next) => {
-    process.env.NODE_ENV = `development`;
+    env = `development`;
+
     return next();
 });
