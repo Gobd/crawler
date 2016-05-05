@@ -5,7 +5,7 @@
 
 //setup required packages
 const Trail = require('../Schemas/trail');
-const config = require('../../config');
+const config = require('../config');
 const GoogleMapsAPI = require("googlemaps");
 
 //setup googleMaps api
