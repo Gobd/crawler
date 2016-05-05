@@ -8,9 +8,9 @@ const minify = require(`gulp-minify`);
 const annotate = require(`gulp-ng-annotate`);
 const rename = require(`gulp-rename`);
 const uglify = require(`gulp-uglify`);
-
 const htmlMin = require(`gulp-htmlmin`);
 const uglyCss = require(`gulp-uglifycss`);
+const gutil = require(`gulp-util`);
 
 gulp.task(`js`, () => {
     return gulp.src(`./public/js/**/*.js`)
@@ -19,16 +19,16 @@ gulp.task(`js`, () => {
             {presets: [`es2015`]}
         ))
         .pipe(concat(`all.js`))
-        .pipe(minify())
+        .pipe(process.env.NODE_ENV = `production` ? minify():gutil.noop())
         .pipe(rename(`all.min.js`))
-        .pipe(uglify())
+        .pipe(process.env.NODE_ENV = `production` ? uglify():gutil.noop())
         .pipe(gulp.dest(`dist/js`));
 });
 
 gulp.task(`css`, () => {
     return gulp.src(`./public/style/*.css`)
         .pipe(uglyCss())
-        .pipe(gulp.dest(`dist/css`));
+        .pipe(gulp.dest(`dist/style`));
 });
 
 gulp.task(`views`, () => {
@@ -36,7 +36,7 @@ gulp.task(`views`, () => {
         .pipe(htmlMin(
             {collapseWhitespace: true}
         ))
-        .pipe(gulp.dest(`dist/views`))
+        .pipe(gulp.dest(`dist/routes`))
 });
 
 gulp.task(`index`, () => {
@@ -44,16 +44,20 @@ gulp.task(`index`, () => {
         .pipe(htmlMin(
             {collapseWhitespace: true}
         ))
-        .pipe(gulp.dest(`dist/views`))
+        .pipe(gulp.dest(`dist/`))
 });
 
-gulp.task(`deploy`, [js, css, views, index], (next) => {
+gulp.task(`images`, () => {
+    return gulp.src(`./public/images/*.png`)
+        .pipe(gulp.dest(`dist/images`));
+});
+
+gulp.task(`deploy`, [`js`, `css`, `views`, `index`, `images`], (next) => {
     process.env.NODE_ENV = `production`;
     return next();
 });
 
-gulp.task(`dev`, [js, css, views, index], (next) => {
+gulp.task(`dev`, [`js`, `css`, `views`, `index`, `images`], (next) => {
     process.env.NODE_ENV = `development`;
-
     return next();
 });
