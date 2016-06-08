@@ -4,12 +4,15 @@
   "description": "simple app that suggests a random trail based on your input",
   "main": "index.js",
   "dependencies": {
+    "asyncawait": "^1.0.3",
+    "bluebird": "^3.4.0",
     "body-parser": "^1.15.0",
     "connect-mongodb-session": "^1.1.1",
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "googlemaps": "^1.4.0",
+    "jsonfile": "^2.3.1",
     "mongoose": "^4.4.8",
     "q": "^1.4.1"
   },
